@@ -1,0 +1,49 @@
+
+  
+
+
+
+body {
+
+    background-image: url('/img/home/home.gif');
+    background-size: 100%;
+    overflow-y: hidden;
+}
+
+
+
+.containerAllHome {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(/exercise/layouts/fonts/minecraft/Minecraftia-Regular.ttf);
+   
+  }
+
+.textHomeStyle {
+
+    font-weight: 900;
+    color: white;
+    font-size: 100%;
+    left: 6em;
+    font-family: 'minecraft';
+    position: absolute;
+    top: 30em;
+
+    text-shadow: 2px 2px 2px black;
+
+}
+
+
+footer {
+
+  
+    position: absolute;
+    bottom: 0 !important;
+
+}

@@ -1,0 +1,50 @@
+footer {
+
+    display: block ;
+    position: absolute ;
+    bottom: auto;
+    width: 100%;
+
+}
+
+
+
+
+
+
+.textStyle {
+
+    color: white !important;
+   
+     position: relative;
+     top: 0em;
+     
+   }
+   
+   
+   .linkStyle {
+   
+     color: #EF7D00 !important;
+     border-bottom: #EF7D00 !important;
+     font-weight: 900;
+   }
+   
+   
+   .linkStyle:hover {
+   
+       color: #EF7D00 !important;
+   
+   }
+   
+   .containerText {
+   
+     border-top: 2px solid black !important;
+     background-color: #004070 !important;
+   }
+   
+   
+   
+   
+   
+   
+   

@@ -1,0 +1,79 @@
+.alert-danger {
+    width: auto;
+    max-width: 450px;
+    padding: 55px;
+    height: auto;
+    max-height: 150px;
+    min-height: 180px;
+    border: 2px solid red;
+    box-shadow: 2px 2px 2px red;
+   
+}
+
+body {
+
+
+
+}
+
+
+
+
+
+
+
+.textStyleError {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0.9em;
+}
+
+.containerError {
+        position: relative;
+    display: flex;
+    justify-content: center;
+        width: 100%;
+
+        visibility: hidden;
+        z-index: 50;
+    
+}
+
+
+
+.iconStyle {
+
+position: absolute;
+    right:0em;
+    bottom: 0em;
+    font-size:50px;
+  
+ 
+}
+
+.spanStyle {
+
+    color: red;
+    font-weight: 900;
+
+}
+
+.iconStyle:hover {
+
+    color: #EF7D00 !important;
+
+}
+
+.linkStyle {
+    position: relative;
+
+}
+
+.containerSpan {
+
+    position: fixed;
+ 
+    top: 190px; 
+    width: auto;
+
+}
