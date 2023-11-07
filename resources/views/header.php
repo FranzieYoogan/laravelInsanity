@@ -8,7 +8,7 @@
   <style>
     <?php include('./public/css/header.css') ?>
   </style>
-<?php session_start(); ?>
+<!-- <?php session_start(); ?> -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary navStyles">
   <div class="container-fluid">
   <a class="navbar-brand" href="./home.php"><img class="logoStyle rounded-circle" src="./public/img/logo/loginLogo.png" alt=""></a>

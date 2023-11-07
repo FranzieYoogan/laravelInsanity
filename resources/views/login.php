@@ -29,7 +29,13 @@ if($_POST){
     $_SESSION['learning_pure_php'] = 'true';
     $_SESSION['learning_pure_php'] = $userName;
     $_SESSION['learning_pure_php'] = $userEmail;
-    header('location: profile.php');
+  echo"
+    <script>
+
+    window.location.href = 'profile.php';
+
+  </script>
+";
 
   } else  {
   
