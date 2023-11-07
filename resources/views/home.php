@@ -24,7 +24,7 @@ include('head.inc.php');
 
 <section class="containerAllHome">
 <audio id='forgingSound' controls autoplay loop style='visibility: hidden; position: absolute;'>
-  <source id='forgingSound' src='img/home/adventureTimeSong.mp4'>
+  <source id='forgingSound' src='./public/img/home/adventureTimeSong.mp4'>
   </audio>
 
   <script>
