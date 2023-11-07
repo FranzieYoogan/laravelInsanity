@@ -1,6 +1,4 @@
-<?php include('head.inc.php')  ?>
-
-<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/exercise/layouts/css/footer.css">
 
 <footer class=" text-center text-lg-start ">
   <!-- Copyright -->

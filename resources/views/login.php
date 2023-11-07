@@ -3,17 +3,16 @@
 
 <?php include('head.inc.php')  ?>
 <?php include('header.php')  ?>
-<?php include('connection.php')  ?>
+
 
 <?php
-    $opacity = false;
-$servername = "127.0.0.1:3306";
-$username = "root";
-$password = "admin357159";
-$dbname = "learning_pure_php";
+$opacity = false;
+ include('connection.php');
 
 if($_POST){
-
+  $userEmail = $_POST['userEmail'];
+  $userPassword = $_POST['userPassword'];
+  $conn = mysqli_connect($host,$user,$pass,$db);
   $query = "SELECT * from users WHERE userEmail = '$userEmail' and userPassword= '$userPassword'";
   $result = mysqli_query($conn,$query);
   
@@ -30,7 +29,7 @@ if($_POST){
     $_SESSION['learning_pure_php'] = 'true';
     $_SESSION['learning_pure_php'] = $userName;
     $_SESSION['learning_pure_php'] = $userEmail;
-    header('location: ./exercise1.php');
+    header('location: profile.php');
 
   } else  {
   
@@ -44,12 +43,20 @@ if($_POST){
 
 ?>
 
+  <style>
+
+    <?php 
+    
+    include('./public/css/login.css');
+    include('./public/css/error.css');
+    include('./public/css/header.css');
+    include('./public/css/footer.css');
+    ?>
 
 
 
-  <link rel="stylesheet" href="/css/login.css">
+  </style>
 
-  <link rel="stylesheet" href="/css/error.css">
 
 <section class='containerError' id='containerError'>
 
@@ -75,11 +82,11 @@ if($_POST){
     <div id="opacityBackground" class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5" style="position: relative; display: block;">
-          <img class="imageStyle" src="img/logo/loginLogo.png"
+          <img class="imageStyle" src="./public/img/logo/loginLogo.png"
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-          <form id="containerFormLogin" onsubmit="opacityChange(); " method="POST" action="">
+          <form id="containerFormLogin"  method="POST" action="">
            
  
   

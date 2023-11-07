@@ -5,18 +5,18 @@
 
 body {
 
-    background-image: url('/img/home/home.gif');
+    background-image: url('./public/img/home/home.gif');
     background-size: 100%;
-    overflow-y: hidden;
+
 }
 
 
 
 .containerAllHome {
 
-    height: 100%;
-    width: 100%;
 
+    width: 100%;
+  
 }
 
 @font-face {
@@ -30,10 +30,10 @@ body {
     font-weight: 900;
     color: white;
     font-size: 100%;
-    left: 6em;
+    left: 3%;
     font-family: 'minecraft';
     position: absolute;
-    top: 30em;
+    top: 80%;
 
     text-shadow: 2px 2px 2px black;
 
@@ -42,8 +42,7 @@ body {
 
 footer {
 
-  
+    display: block;
     position: absolute;
-    bottom: 0 !important;
-
+    bottom: 0% !important;
 }

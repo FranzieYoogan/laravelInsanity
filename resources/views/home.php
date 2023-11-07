@@ -1,24 +1,28 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
 
-    <?php include('head.inc.php')  ?>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/footer.css">
-        <link rel="stylesheet" href="/css/home.css">
 
-        <title>Testing</title>
 
-      
-    </head>
-    <body class="antialiased">
-  
-    <?php include('header.php') ?>
-        
-    <section class="containerAllHome">
+<?php if(session_status() == 2) {
+
+    include('dashboard.php');
+} else{
+    include('header.php');
+} 
+include('head.inc.php');
+
+
+?>
+
+<style>
+    <?php 
+    include('./public/css/home.css');
+    include('./public/css/header.css');
+    include('./public/css/footer.css');
+    ?>
+
+</style>
+
+<section class="containerAllHome">
 <audio id='forgingSound' controls autoplay loop style='visibility: hidden; position: absolute;'>
   <source id='forgingSound' src='img/home/adventureTimeSong.mp4'>
   </audio>
@@ -35,10 +39,8 @@ audio.volume = 0.1;
 
 </section>
 
-    <?php include('footer.php') ?>
-
-    </body>
-</html>
 
 
+
+<?php  include('./footer.php') ?>
 

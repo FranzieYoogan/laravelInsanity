@@ -1,6 +1,6 @@
 body {
 
-  overflow-x: hidden;
+
 
 }
 
@@ -8,9 +8,37 @@ body {
 
     height: auto;
     max-height: 50px;
-    border: 2px solid orange;
+    border: 2px solid white;
     box-shadow: 2px 2px 2px black;
 
+}
+
+.navbar-toggler-icon {
+
+  background-image: url('./public/img/header/hamburger.png') !important;
+
+}
+
+.navbar-toggler {
+
+  outline: none !important;
+
+}
+
+.navbar-toggler:hover,.navbar-toggler:focus, .navbar-toggler:active {
+
+  border: 2px solid #EF7D00 !important;
+  outline: none !important;
+ box-shadow: none !important;
+ 
+
+}
+
+.logoStyle:hover {
+
+  background-color: #EF7D00 !important;
+  border: none !important;
+  box-shadow: 2px 2px 2px #EF7D00;
 }
 
 .navbar-collapse {

@@ -1,19 +1,17 @@
 body {
 
 
-
-    
-    
+height: 100% !important;
+display: block;
   
 }   
 
 .allThingsTogether {
 
 opacity: 1;
-
-position: relative;
-bottom: 120px !important;
-
+height: 100% !important;
+display: block;
+margin-top: 8.5%;
 }
 
 footer {
@@ -21,40 +19,38 @@ footer {
     display: block;
     position: absolute;
     bottom: auto !important;
-    
 
 }
 
 .containerLogin {
-    height: auto;
-    display: flex !important;
+    height: 100% !important;
+    margin-top: 3em;
+    margin-bottom: 5em;
   opacity: 1 !important;
-  
+  display: block;
 
 }
 
 .imageStyle {
-
-    width: auto;
-    min-width: 50%;
-  display: block;
-    max-width: 50%;
-    border-radius: 150px !important;
-    height: auto;
-
     position: relative;
-    top: -4em;
-    border: 2px solid #EF7D00 !important;
-    box-shadow: 3px 3px 3px black;
+    display: block;
+    margin-top: 5.5em;
+    width: auto;
+    max-width: 50%;
+    min-width: auto;
+    border-radius: 150px;
+    height: auto;
+bottom: 8em;
+    border: 2px solid #EF7D00;
+    box-shadow: 2px 2px 2px black;
 
 }
 
 .inputStyle{
     border: 2px solid #004070 !important;
     width: auto;
-    min-width: 30%;
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    min-width: 100%;
 
 }
 
@@ -68,7 +64,7 @@ footer {
 
     border: 2px solid #EF7D00 !important;
     outline: none !important;
-    box-shadow: 2px 2px 2px black !important;
+    box-shadow: 2px 2px 2px black;
 
 }
 
@@ -83,19 +79,19 @@ footer {
 
 .buttonStyle {
 
-        background-color: #EF7D00 !important;
+        background-color: #EF7D00;
     box-shadow: 2px 2px 2px  black ;
     border: 2px solid transparent !important;
     
         font-weight: 900;
-        transition: 1s !important;
+        transition: 1s;
      
 }
 
 
 .buttonStyle:hover,.buttonStyle:active,.buttonStyle:focus {
 
-    background-color: #004070 !important;
+    background-color: #004070;
     border: 2px solid black !important;
     box-shadow: 2px 2px 2px #EF7D00 !important;
     border-radius: 20px;
@@ -110,6 +106,21 @@ footer {
 
 }
 
+.linkForgot {
+
+    color: #EF7D00 !important ;
+
+      font-weight: 900;
+}
+
+.linkForgot:hover {
+
+    color: #EF7D00 !important ;
+
+   
+
+}
+
 .linkStyle:hover {
 
     color: #EF7D00 !important ;
@@ -121,8 +132,6 @@ footer {
 .imgStyle {
 
     width: auto;
-    height: auto;
-    min-height: 40px;
     max-height: 40px;
     position: absolute;
     bottom: 0px;
@@ -136,10 +145,10 @@ footer {
 
 }
 
-.linkForgot {
+.text-body {
 
     color: #EF7D00 !important;
- 
+    border-bottom: #EF7D00 !important;
     font-weight: 900;
 }
 

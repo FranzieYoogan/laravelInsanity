@@ -26,4 +26,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::POST('/login', function () {
+    return view('profile');
+});
+
+Route::get('/profile', function () {
+    return view('login');
+});
 
