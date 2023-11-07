@@ -43,17 +43,13 @@ if($_POST){
 }
 
 ?>
-<style>
-
-<?php include('css/login.css');?>
-<?php include('css/footer.css'); ?>
-<?php include('css/error.css'); ?>
-</style>
 
 
 
 
+  <link rel="stylesheet" href="/css/login.css">
 
+  <link rel="stylesheet" href="/css/error.css">
 
 <section class='containerError' id='containerError'>
 
@@ -78,7 +74,7 @@ if($_POST){
 <section id="containerLogin" class="containerLogin">
     <div id="opacityBackground" class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-md-9 col-lg-6 col-xl-5">
+        <div class="col-md-9 col-lg-6 col-xl-5" style="position: relative; display: block;">
           <img class="imageStyle" src="img/logo/loginLogo.png"
             class="img-fluid" alt="Sample image">
         </div>
@@ -107,7 +103,7 @@ if($_POST){
             <div class="d-flex justify-content-end align-items-center containerForgot">
               
             
-              <a href="./changePassword.php" class="text-body">Forgot password?</a>
+              <a href="./changePassword.php" class="linkForgot">Forgot password?</a>
             </div>
   
             <div class="text-center text-lg-start mt-4 pt-2">
