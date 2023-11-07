@@ -1,13 +1,13 @@
-<?php include('./header.php') ?> 
-<?php  include('./head.inc.php')  ?>
+<?php include('header.php') ?> 
+<?php  include('head.inc.php')  ?>
 <?php error_reporting(E_ALL ^ E_WARNING);  ?>
 
 
     <style>
 
-<?php include('css/footer.css') ?> 
-<?php include('css/header.css') ?> 
-<?php include('css/changePassword.css') ?> 
+<?php include('./public/css/footer.css') ?> 
+<?php include('./public/css/header.css') ?> 
+<?php include('./public/css/changePassword.css') ?> 
 
     </style>
 
@@ -160,4 +160,4 @@ header("Location: login.php");
 
 
 
-<?php include('./footer.php') ?> 
+<?php include('footer.php') ?> 

@@ -1,7 +1,7 @@
 
 
-<?php include('./header.php'); ?>
-<?php include('./head.inc.php'); 
+<?php include('header.php'); ?>
+<?php include('head.inc.php'); 
 
   $opacity = false;
 
@@ -11,10 +11,10 @@
 
 <style>
 
-    <?php include('css/signUp.css'); ?>
-    <?php include('css/header.css'); ?>
-     <?php include('css/error.css'); ?> 
-    <?php include('css/footer.css'); ?>
+    <?php include('./public/css/signUp.css'); ?>
+    <?php include('./public/css/header.css'); ?>
+     <?php include('./public/css/error.css'); ?> 
+    <?php include('./public/css/footer.css'); ?>
 </style>
 
 
@@ -138,10 +138,7 @@
 
 
 if(isset($_POST['submit'])){
-$host = "127.0.0.1:3306";
-$user = "root";
-$pass = "admin357159";
-$db = "learning_pure_php";
+include('connection.php');
 $userName = $_POST['userName'];
 $userPassword = $_POST['userPassword'];
 $userEmail = $_POST['userEmail'];
@@ -226,4 +223,4 @@ document.getElementById('containerReset').style.opacity = 0.3;
 
  
 
-  <?php include('./footer.php') ?>
+  <?php include('footer.php') ?>
