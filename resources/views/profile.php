@@ -17,6 +17,7 @@ if (isset($_SESSION['learning_pure_php'])) {
     while ($row = mysqli_fetch_assoc($result)) {
 
       $userNameRow = $row['userName'];
+      $userIdRow = $row['userId'];
       $userMajorRow = $row['userMajor'];
       $userEmailRow = $row['userEmail'];
       $userCpf = $row['userCpf'];
@@ -365,6 +366,10 @@ if (isset ($_POST['submitUserNameChange'])) {
 
         </script>
 
+<div class="positioningData">
+        <h1 class="textStyleProfile">Student Id  <span class="spanIdStyle"><?php echo $userIdRow; ?></span></h1>
+      </div>
+
         <h1 class="textStyleProfile">Full Name <span class="dataPushing">
             <span id="spanMoving">
               <?php echo ucwords($userNameRow); ?>
@@ -373,6 +378,8 @@ if (isset ($_POST['submitUserNameChange'])) {
               onmouseout="mouseOverThingOut()" onclick="triggerInputInput()"><img class="imgButtonSendProfile"
                 src="./public/img/profile/blacksmith.png" alt=""></button></span></h1>
       </div>
+
+     
 
       <script>
 
@@ -412,6 +419,8 @@ if (isset ($_POST['submitUserNameChange'])) {
               <button class="inputMenuButton2" type="button" onclick="triggerCloseInput()"><i
               class="fa-solid fa-xmark"style="color: #EF7D00"></i></button>
         </div>
+
+      
 
          
         

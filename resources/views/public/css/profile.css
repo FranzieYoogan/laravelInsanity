@@ -462,3 +462,16 @@ overflow-y: hidden;
  max-width: 25px;
 
 }
+
+.spanIdStyle {
+
+    font-size: 18px;
+    border: 2px solid #EF7D00;
+    border-radius: 50px !important;
+    padding: 5px;
+  position: relative;
+  bottom: 3px;
+  text-shadow: 2px 2px black !important;
+    background-color: #004070;
+
+}
