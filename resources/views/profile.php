@@ -10,7 +10,7 @@ if (isset($_SESSION['learning_pure_php'])) {
   include('connection.php');
   $conn = mysqli_connect($host, $user, $pass, $db);
   $userEmail = $_SESSION['learning_pure_php'];
-  $query = "SELECT * from users WHERE userEmail = '$userEmail'";
+  $query = "SELECT * from users";
   $result = mysqli_query($conn, $query);
 
   if (mysqli_num_rows($result) == 1) {
@@ -370,9 +370,7 @@ if (isset($_POST['submitUserNameChange'])) {
           </script>
 
           <div class="positioningData">
-            <h1 class="textStyleProfile">Student Id <span class="spanIdStyle">
-                <?php echo $userIdRow; ?>
-              </span></h1>
+            <h1 class="textStyleProfile">Student Id <span class="spanIdStyle">  <?php echo $userIdRow ?>  </span></h1>
           </div>
 
           <h1 class="textStyleProfile">Full Name <span class="dataPushing">
@@ -471,7 +469,9 @@ if (isset($_POST['submitUserNameChange'])) {
             </span></h1>
         </div>
 
-
+        <div style="position: relative;">
+      <a class="locationAnchor" href="location.php"><img class="locationAnchorImage" src="./public/img/profile/map.png" alt="location.php"></a>
+    </div>
       </section>
 
     </section>
@@ -481,9 +481,7 @@ if (isset($_POST['submitUserNameChange'])) {
 
   </section>
 
-  <div style="position: relative;">
-      <a class="locationAnchor" href="location.php"><img class="locationAnchorImage" src="./public/img/profile/map.png" alt="location.php"></a>
-    </div>
+  
 </section>
 
 

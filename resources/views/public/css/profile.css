@@ -18,8 +18,8 @@
 .containerAll {
 
     width: 100%;
-    height: 100%;
-    margin-bottom:3.5%;
+  
+
 }
 
 
@@ -149,21 +149,31 @@ footer {
 display: flex;
 gap: 7em;    
 overflow-y: hidden;
+
 }
 
 .containerDataProfile {
 
-    border-left: 3px solid #004070 !important;
-    height: 450px;
+ 
     width: auto;
     min-width: 650px;
     max-width: 650px;
     padding-left: 5em;
-    
-    margin-top: 1em;
+    margin-bottom:7.3%;
+
     position: relative;
 }
 
+.borderleft {
+    position: relative;
+    border-right: 3px solid #004070 ;
+    height: 100em;
+    left: 30% !important;
+width: auto;
+
+
+
+}
 .containerDataProfile2 {
 
     border: 1px solid #EF7D00;
@@ -465,20 +475,22 @@ overflow-y: hidden;
 
 .spanIdStyle {
 
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid #EF7D00;
     border-radius: 50px !important;
     padding: 5px;
   position: relative;
   bottom: 3px;
   text-shadow: 2px 2px black !important;
-    background-color: #004070;
+    background-color: #004070 !important;
 
 }
 
 .locationAnchor {
 
-   
+
+    
+
 
 
  
@@ -486,23 +498,28 @@ overflow-y: hidden;
 }
 
 .locationAnchorImage {
-    left: 90%;
-    bottom: -15px;
-    position: absolute;
+   
     border: 1px solid transparent;
     border-radius: 40px;
     box-shadow: 2px 2px 2px black;
     width: auto;
-    min-width: 4%;
-    max-width: 4%;
+    min-width:5%;
+    max-width: 5%;
+
+    background-color: white;
     transition: 1s;
+    position: fixed;
+bottom: 13%;
+left: 90%;
+z-index: 50;
+
 }
 
 .locationAnchorImage:hover {
  
  
-    border: 2px solid #EF7D00;
-    border-radius: 40px;
+    border: 2px solid #EF7D00 !important;
+    border-radius: 90px;
     box-shadow: 2px 2px 2px black;
     width: auto;
   
