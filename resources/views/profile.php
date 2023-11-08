@@ -230,7 +230,7 @@ if (isset ($_POST['submitUserNameChange'])) {
     audio.volume = 0.1;
     </script>
 
-  <section id="containerAll">
+  <section class="containerAll" id="containerAll">
     
     <?php if($animation == true) {
 
