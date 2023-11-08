@@ -3,7 +3,7 @@
 
 
 
-<link rel="stylesheet" href="/exercise/layouts/css/header.css">
+
 
   <style>
     <?php include('./public/css/header.css') ?>

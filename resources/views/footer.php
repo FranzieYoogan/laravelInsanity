@@ -1,4 +1,12 @@
-<link rel="stylesheet" href="/exercise/layouts/css/footer.css">
+
+
+<style>
+
+<?php include('./public/css/footer.css');?>
+
+</style>
+
+
 
 <footer class=" text-center text-lg-start ">
   <!-- Copyright -->

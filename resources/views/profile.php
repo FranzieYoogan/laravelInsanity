@@ -133,8 +133,7 @@ WHERE userEmail = '$userEmailRow'; ";
 
 
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 0);
+$animation = false;
 
 if (isset ($_POST['submitUserNameChange'])) {
  
@@ -227,8 +226,11 @@ if (isset ($_POST['submitUserNameChange'])) {
 </style>
 
 <script>let audio = document.getElementById('forgingSound');
-    audio.currentTime = 3; 
+if(audio) {
+  audio.currentTime = 3; 
     audio.volume = 0.1;
+}
+   
     </script>
 
   <section class="containerAll" id="containerAll">
@@ -473,4 +475,4 @@ if (isset ($_POST['submitUserNameChange'])) {
 </section>
 
 
-<?php include('./footer.php') ?>
+<?php include('footer.php') ?>

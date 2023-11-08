@@ -84,7 +84,7 @@ body {
 
 @font-face {
     font-family: uniSans;
-    src: url(/exam1/public/fonts/uniHeavy/uni-sans.heavy-caps.otf);
+    src: url(./public/fonts/uniHeavy/uni-sans.heavy-caps.otf);
    
   }
 
