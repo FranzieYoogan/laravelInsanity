@@ -464,7 +464,7 @@ if (isset($_POST['submitUserNameChange'])) {
         </div>
 
         <div class="positioningData2">
-          <h1 class="textStyleProfile">User Unity<span class="dataPushing">
+          <h1 class="textStyleProfile" style="border-top: 3px solid #004070;">User Unity<span class="dataPushing" >
               <?php echo $userInstitution; ?>
             </span></h1>
         </div>
