@@ -29,7 +29,7 @@
         </p>
         </div>
         <div class="form-outline inputEmail">
-        <img class="imgStyle" src="img/signUp/owl.gif" alt="">
+        <img class="imgStyle" src="./public/img/signUp/owl.gif" alt="">
             <input type="email" id="typeEmail" name="userEmail" required class="form-control my-3 inputResetStyle" />
             <label class="form-label labelResetStyle" for="typeEmail">Enter your EMAIL</label>
         </div>

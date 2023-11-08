@@ -99,7 +99,7 @@ if($_POST){
             <!-- Email input -->
             <div class=" mb-4">
               <div class="containerImg">
-                <img class="imgStyle" src="img/signUp/owl.gif" alt="">
+                <img class="imgStyle" src="./public/img/signUp/owl.gif" alt="">
               </div>
               <input type="text"   name="userEmail" id="userEmail"  required   class="form-control form-control-lg inputStyle"
                 placeholder="Enter UserEmail" />
