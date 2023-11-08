@@ -1,0 +1,17 @@
+
+
+.iframeStyles {
+
+    border: 2px solid #EF7D00 !important;
+  
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+
+    display: block;
+    position: absolute;
+    bottom: auto !important;
+
+}

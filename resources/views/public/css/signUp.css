@@ -45,6 +45,26 @@ footer {
 }
 
 
+.selectStyleSignUpInstitution {
+
+    width: 28% !important;
+    color: #EF7D00;
+    border: 1px solid #004070;
+    
+
+ 
+}
+
+.selectStyleSignUpInstitution:focus, .selectStyleSignUpInstitution:active {
+
+      
+        box-shadow: 2px 2px 2px 2px #EF7D00 !important;
+        outline: solid 2px #EF7D00 !important;
+        border: none !important;
+ 
+}
+
+
 .selectStyleSignUpState {
 
     width: 15% !important;

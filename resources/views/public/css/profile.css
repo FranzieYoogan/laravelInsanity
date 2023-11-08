@@ -476,3 +476,36 @@ overflow-y: hidden;
 
 }
 
+.locationAnchor {
+
+   
+
+
+ 
+ 
+}
+
+.locationAnchorImage {
+    left: 90%;
+    bottom: -15px;
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px black;
+    width: auto;
+    min-width: 4%;
+    max-width: 4%;
+    transition: 1s;
+}
+
+.locationAnchorImage:hover {
+ 
+ 
+    border: 2px solid #EF7D00;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px black;
+    width: auto;
+  
+    min-width: 6%;
+    max-width: 6%;
+}
