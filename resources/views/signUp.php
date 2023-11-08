@@ -213,10 +213,10 @@ setTimeout(() => {
 
 
 
-          <select class="form-select selectStyleSignUpInstitution" name="userInstitution" id="userInstitutionRJ" required
+          <select class="form-select selectStyleSignUpInstitution" name="userInstitution" id="userInstitutionRJ"  required
             style="display: none;">
 
-            <option selected>Select your unity</option>
+            <option disabled selected>Select your unity</option>
             <option value="Bangu" class="optionStyle">BANGU</option>
             <option value="Niteroi" class="optionStyle">NITERÓI</option>
 
@@ -227,7 +227,7 @@ setTimeout(() => {
           <select class="form-select selectStyleSignUpInstitution" name="userInstitution" id="userInstitutionSP" required
             style="display: none;">
 
-            <option selected>Select your unity</option>
+            <option disabled selected>Select your unity</option>
             <option value="JardimPaulista" class="optionStyle">JARDIM PAULISTA</option>
             <option value="Adamantina" class="optionStyle">ADAMANTINA</option>
 

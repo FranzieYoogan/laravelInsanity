@@ -16,7 +16,7 @@ if (isset($_SESSION['learning_pure_php'])) {
     include('connection.php');
     $conn = mysqli_connect($host, $user, $pass, $db);
     $userEmail = $_SESSION['learning_pure_php'];
-    $query = "SELECT * from users";
+    $query = "SELECT * from users WHERE userEmail = '$userEmail'";
     $result = mysqli_query($conn, $query);
   
     if (mysqli_num_rows($result) == 1) {
