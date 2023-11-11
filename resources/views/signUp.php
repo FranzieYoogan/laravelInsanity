@@ -124,20 +124,29 @@ setTimeout(() => {
         </div>
 
         <div class="form-outline containerNameSpecial">
+          
           <input type="text" id="userName" name="userName" pattern="[A-Za-z]{}" maxlength="30" minlength="3" required
             class="form-control my-3 inputResetStyle inputNameSpecial" />
           <label class="form-label labelResetStyle labelnameSpecial" for="userName">Enter your Name</label>
-
-
+          <div>
+        <div class="containerRadioGender">
+          <div>
           <input type="radio" id="radioF" name="radioGender"  class="radioStyle" value="female" required>
           <label for="radioF"  class=""><img  class="genderStyle" id="genderStyleF" src="./public/img/profile/female.png" alt=""></label>
+          </div>
 
+          <div>
           <input type="radio" id="radioM" name="radioGender"  class="radioStyle" value="male" required>
           <label for="radioM" class=""><img class="genderStyle" id="genderStyleM" src="./public/img/profile/male.png" alt=""></label>
+          </div>
 
+          <div>
           <input type="radio" id="radioE" name="radioGender" class="radioStyle" value="enby" required>
           <label for="radioE" class=""><img class="genderStyle" id="genderStyleE" src="./public/img/profile/enby.png" alt=""></label>
-
+          </div>
+          </div>
+          </div>
+          </div>
   <script>
 
 
@@ -235,7 +244,7 @@ if(focusE = true) {
 
   </script>
 
-        </div>
+     
 
 
 

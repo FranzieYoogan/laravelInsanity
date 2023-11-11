@@ -195,7 +195,7 @@ footer {
 .labelResetStyle {
 
     color: #EF7D00 !important;
-    margin-left: 0.5em;
+    width: auto;
 }
 
 .card-body {
@@ -386,9 +386,9 @@ font-size: 90%;
     .inputNameSpecial {
 
         width: auto;
-        min-width: 50%;
-        max-width: 50%;
-      
+        min-width: 55%;
+        max-width: 55%;
+        height: auto;
     
 
 
@@ -401,8 +401,8 @@ font-size: 90%;
     }
 
     .containerNameSpecial {
-        display: flex;
-
+    display: flex;
+gap: 2%;
     }
 
     .radioGender {
@@ -422,7 +422,7 @@ font-size: 90%;
 
     .radioStyle {
 
-        margin-left: 1em;
+        margin-left: 10px;
         
 
     }
@@ -513,6 +513,13 @@ font-size: 90%;
         margin-top: 5px;
     }
 
+    .containerRadioGender {
+
+        width: auto;
+        display: flex;
+     
+
+    }
   
     
 
