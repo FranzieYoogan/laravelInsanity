@@ -353,9 +353,11 @@ font-size: 90%;
 
         position: fixed;
         padding: 60px;
+        opacity: 1;
        bottom: 16em;
         left: 30em;
         font-weight: bold;
+        z-index: 50;
     }
 
     .inputEmail {

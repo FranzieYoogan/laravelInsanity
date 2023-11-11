@@ -43,11 +43,12 @@ if (isset($_POST['submit'])) {
 VALUES ('$userName','$userPassword','$userEmail','$userCpf','$userPhone','$userQuestion','$userMajor','$userState','$userPostCode','$userInstitution','$userAddress','$userGender');";
 
     $result = mysqli_query($conn, $query);
+    $opacity = true;
     echo "<div class='alert alert-success alertStyle' role='alert'>
   ACCOUNT CREATED SUCCESSFULLY!!
 </div>";
 
-    $opacity = true;
+
 
     echo " <script>
 

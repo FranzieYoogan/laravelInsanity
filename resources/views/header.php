@@ -5,7 +5,7 @@
 
 
 
-  <style>
+<style>
     <?php include('./public/css/header.css') ?>
   </style>
 <!-- <?php session_start(); ?> -->
