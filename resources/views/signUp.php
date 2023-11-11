@@ -30,6 +30,7 @@ if (isset($_POST['submit'])) {
   $userInstitution = $_POST['userInstitution'];
   $userCpf = $_POST['userCpf'];
   $userPhone = $_POST['userPhone'];
+  $userGender = $_POST['radioGender'];
   $userQuestion = $_POST['radio'];
 
   $passwordConfirmation = $_POST['passwordConfirmation'];
@@ -38,8 +39,8 @@ if (isset($_POST['submit'])) {
   $resultSql = mysqli_query($conn, $sql);
   if ($passwordConfirmation == $userPassword && mysqli_num_rows($resultSql) == 0) {
 
-    $query = "INSERT INTO users (userName, userPassword, userEmail, userCpf, userPhone, userQuestion, userMajor, userState, userPostCode, userInstitution, userAddress)
-VALUES ('$userName','$userPassword','$userEmail','$userCpf','$userPhone','$userQuestion','$userMajor','$userState','$userPostCode','$userInstitution','$userAddress');";
+    $query = "INSERT INTO users (userName, userPassword, userEmail, userCpf, userPhone, userQuestion, userMajor, userState, userPostCode, userInstitution, userAddress,userGender)
+VALUES ('$userName','$userPassword','$userEmail','$userCpf','$userPhone','$userQuestion','$userMajor','$userState','$userPostCode','$userInstitution','$userAddress','$userGender');";
 
     $result = mysqli_query($conn, $query);
     echo "<div class='alert alert-success alertStyle' role='alert'>
@@ -128,13 +129,13 @@ setTimeout(() => {
           <label class="form-label labelResetStyle labelnameSpecial" for="userName">Enter your Name</label>
 
 
-          <input type="radio" id="radioF" name="radio"  class="radioStyle" >
+          <input type="radio" id="radioF" name="radioGender"  class="radioStyle" value="female" required>
           <label for="radioF"  class=""><img  class="genderStyle" id="genderStyleF" src="./public/img/profile/female.png" alt=""></label>
 
-          <input type="radio" id="radioM" name="radio"  class="radioStyle">
+          <input type="radio" id="radioM" name="radioGender"  class="radioStyle" value="male" required>
           <label for="radioM" class=""><img class="genderStyle" id="genderStyleM" src="./public/img/profile/male.png" alt=""></label>
 
-          <input type="radio" id="radioE" name="radio" class="radioStyle">
+          <input type="radio" id="radioE" name="radioGender" class="radioStyle" value="enby" required>
           <label for="radioE" class=""><img class="genderStyle" id="genderStyleE" src="./public/img/profile/enby.png" alt=""></label>
 
   <script>
@@ -352,11 +353,11 @@ if(focusE = true) {
         <section class="containerRadio">
 
           <p class="pStyle">Would you finish Undertale as a...</p>
-          <input type="radio" class="btn-check checkPacifist" name="radio" value="pacifist" id="radioPacifist" checked>
+          <input type="radio" class="btn-check checkPacifist" name="radio" value="pacifist" id="radioPacifist" required>
           <label class="btn pacifist" for="radioPacifist">PACIFIST</label>
 
 
-          <input type="radio" class="btn-check checkWarmonger" name="radio" value="warmonger" id="radioWarmonger">
+          <input type="radio" class="btn-check checkWarmonger" name="radio" value="warmonger" id="radioWarmonger" required>
           <label class="btn warmonger" for="radioWarmonger">WARMONGER</label>
 
         </section>

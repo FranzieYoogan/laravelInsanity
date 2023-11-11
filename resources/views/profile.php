@@ -23,6 +23,7 @@ if (isset($_SESSION['learning_pure_php'])) {
       $userCpf = $row['userCpf'];
       $userAddress = $row['userAddress'];
       $userPostCode = $row['userPostCode'];
+      $userGender = $row['userGender'];
       $userInstitution = $row['userInstitution'];
       $userPhone = $row['userPhone'];
       $userPhoto = $row['userPhoto'];
@@ -333,6 +334,42 @@ if (isset($_POST['submitUserNameChange'])) {
 
       <?php }
       ; ?>
+
+            <div style="position: relative;">
+
+              <?php if($userGender == 'female') {?> 
+
+              <?php echo " <div class='containerGender'>
+                  <img class='imgGenderStyleF' src='./public/img/profile/female.png' alt=''>
+
+                  </div>";
+
+                  ?>
+                <?php } ?>
+
+
+                <?php if($userGender == 'male') {?> 
+
+<?php echo " <div class='containerGender'>
+    <img class='imgGenderStyleM' src='./public/img/profile/female.png' alt=''>
+
+    </div>";
+
+    ?>
+  <?php } ?>
+
+  
+  <?php if($userGender == 'enby') {?> 
+
+<?php echo " <div class='containerGenderE'>
+    <img class='imgGenderStyleM' src='./public/img/profile/female.png' alt=''>
+
+    </div>";
+
+    ?>
+  <?php } ?>
+
+            </div>
 
 
     </section>

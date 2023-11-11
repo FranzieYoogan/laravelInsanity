@@ -180,7 +180,7 @@ width: auto;
     box-shadow: 1px 1px 2px 2px #EF7D00;
     padding: 25px;
     border-radius: 20px;
-    margin-top: 2.9em;
+    margin-top: 2.3em;
     width: auto;
 }
 
@@ -525,4 +525,47 @@ z-index: 50;
   
     min-width: 6%;
     max-width: 6%;
+}
+
+.containerGender {
+
+    position: absolute;
+    left: 3%;
+    bottom: 0.5em;
+
+
+}
+
+.imgGenderStyleF {
+        border: 1px solid rgb(255, 161, 177);
+        border-radius: 40px;
+            padding: 3px;
+            box-shadow: 1px 1px 1px #EF7D00;
+    width: auto;
+    min-width: 30px;
+    max-width: 30px;
+
+}
+
+
+.imgGenderStyleM {
+    border: 1px solid rgb(182, 216, 232);
+    border-radius: 40px;
+        padding: 3px;
+        box-shadow: 1px 1px 1px #EF7D00;
+width: auto;
+min-width: 30px;
+max-width: 30px;
+
+}
+
+.imgGenderStyleE {
+    border: 1px solid rgb(254, 215, 254);
+    border-radius: 40px;
+        padding: 3px;
+        box-shadow: 1px 1px 1px #EF7D00;
+width: auto;
+min-width: 30px;
+max-width: 30px;
+
 }
