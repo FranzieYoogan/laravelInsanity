@@ -5,6 +5,7 @@
 
 
 <?php
+  $animation= false;
 if (isset($_SESSION['learning_pure_php'])) {
 
   include('connection.php');
@@ -70,18 +71,22 @@ if (isset($_POST["submitInputProfile"]) and isset($_SESSION['learning_pure_php']
   $file_name = $_FILES['file']['name'];
   $temp_name = $_FILES['file']['tmp_name'];
   $file_size = $_FILES['file']['size'];
-  $file_destination = "upload/userProfile/" . $file_name;
+  $file_destination = "./public/img/profile/upload/userProfile/" . $file_name;
+
+
 
 
 
   if (move_uploaded_file($temp_name, $file_destination)) {
 
-    $animation = true;
+
 
     $query = "UPDATE users
 SET userPhoto = '$file_destination'
-WHERE userEmail = '$userEmailRow'; ";
+WHERE userEmail = '$userEmailRow' ";
     $result = mysqli_query($conn, $query);
+    $animation = true;
+   
 
 
 
@@ -135,7 +140,7 @@ WHERE userEmail = '$userEmailRow'; ";
 
 
 <?php
-$animation = false;
+
 
 if (isset($_POST['submitUserNameChange'])) {
 
@@ -157,7 +162,7 @@ if (isset($_POST['submitUserNameChange'])) {
 
     if ($resultQueryName) {
 
-      $animation = true;
+
 
       echo "
 
@@ -189,7 +194,7 @@ if (isset($_POST['submitUserNameChange'])) {
     }
   } else {
 
-    $animation = true;
+  
 
     echo "  <div class='alert alert-danger alertStyle' role='alert'>
   ERROR!! COULD YOU TRY IT AGAIN? <img class='errorIconProfile' src='./public/img/profile/error.png' alt=''>
@@ -237,14 +242,17 @@ if (isset($_POST['submitUserNameChange'])) {
 
 <section class="containerAll" id="containerAll">
 
-  <?php if ($animation == true) {
+<?php if ($animation == true) {
 
-    echo "<script> document.getElementById('containerAll').style.opacity = 0.3 </script>";
+echo "<script> document.getElementById('containerAll').style.opacity = 0.3;
+document.querySelector('body').style.overflow = 'hidden';
 
-  } else {
-    echo "<script> document.getElementById('containerAll').style.opacity = 1 </script>";
+</script>";
 
-  } ?>
+} if($animation == false) {
+echo "<script> document.getElementById('containerAll').style.opacity = 1 </script>";
+
+} ?>
 
   <form class="formImageProfile" id="formImageProfile" action="" method="POST" enctype="multipart/form-data">
 
@@ -308,7 +316,7 @@ if (isset($_POST['submitUserNameChange'])) {
         <button onclick="showForm()" onmouseover="editStayStill()" class="buttonStyleProfile">
           <h3 class="editImageButton"><span id="textProfileThing" class="spanH3Profile">EDIT</span> <img
               class="imgStyleImgButton" src="./public/img/profile/blacksmith.png" alt=""></h3> <img
-            class="rounded-circle userImage" <?php echo "src='./public/img/profile/$userPhoto'"; ?> alt="">
+            class="rounded-circle userImage" <?php echo "src='$userPhoto'"; ?> alt="">
         </button>
 
       </div>
@@ -351,7 +359,7 @@ if (isset($_POST['submitUserNameChange'])) {
                 <?php if($userGender == 'male') {?> 
 
 <?php echo " <div class='containerGender'>
-    <img class='imgGenderStyleM' src='./public/img/profile/female.png' alt=''>
+    <img class='imgGenderStyleM' src='./public/img/profile/male.png' alt=''>
 
     </div>";
 
@@ -361,8 +369,8 @@ if (isset($_POST['submitUserNameChange'])) {
   
   <?php if($userGender == 'enby') {?> 
 
-<?php echo " <div class='containerGenderE'>
-    <img class='imgGenderStyleM' src='./public/img/profile/female.png' alt=''>
+<?php echo " <div class='containerGender'>
+    <img class='imgGenderStyleE' src='./public/img/profile/enby.png' alt=''>
 
     </div>";
 
@@ -520,6 +528,7 @@ if (isset($_POST['submitUserNameChange'])) {
 
   
 </section>
+
 
 
 <?php include('footer.php') ?>

@@ -50,7 +50,7 @@ if(mysqli_num_rows($result) == 1) {
           ?>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="userNameStyleHeader">  <?php  echo  ucwords($userNameRow);echo"</span>"; echo " <img class='rounded-circle userPhotoHeader' src='./public/img/profile/$userPhoto' alt=''>"; ?>
+          <span class="userNameStyleHeader">  <?php  echo  ucwords($userNameRow);echo"</span>"; echo " <img class='rounded-circle userPhotoHeader' src='$userPhoto' alt=''>"; ?>
             </a>
          
             <ul class="dropdown-menu">
