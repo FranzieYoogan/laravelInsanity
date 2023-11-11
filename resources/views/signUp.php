@@ -122,11 +122,122 @@ setTimeout(() => {
           <label class="form-label labelResetStyle" for="userEmail">Enter your EMAIL</label>
         </div>
 
-        <div class="form-outline">
+        <div class="form-outline containerNameSpecial">
           <input type="text" id="userName" name="userName" pattern="[A-Za-z]{}" maxlength="30" minlength="3" required
-            class="form-control my-3 inputResetStyle" />
-          <label class="form-label labelResetStyle" for="userName">Enter your Name</label>
+            class="form-control my-3 inputResetStyle inputNameSpecial" />
+          <label class="form-label labelResetStyle labelnameSpecial" for="userName">Enter your Name</label>
+
+
+          <input type="radio" id="radioF" name="radio"  class="radioStyle" >
+          <label for="radioF"  class=""><img  class="genderStyle" id="genderStyleF" src="./public/img/profile/female.png" alt=""></label>
+
+          <input type="radio" id="radioM" name="radio"  class="radioStyle">
+          <label for="radioM" class=""><img class="genderStyle" id="genderStyleM" src="./public/img/profile/male.png" alt=""></label>
+
+          <input type="radio" id="radioE" name="radio" class="radioStyle">
+          <label for="radioE" class=""><img class="genderStyle" id="genderStyleE" src="./public/img/profile/enby.png" alt=""></label>
+
+  <script>
+
+
+  let radioF = document.getElementById('radioF');
+
+radioF.addEventListener("focus", (event) => {
+let focusF = true;
+let focusE = false;
+let focusM = false;
+
+if(focusF = true) {
+  document.getElementById('genderStyleF').style.border = '2px solid rgb(255, 161, 177)';
+  document.getElementById('genderStyleF').style.borderRadius = '40px';
+  document.getElementById('genderStyleF').style.padding = '5px';
+  document.getElementById('genderStyleF').style.boxShadow = '2px 2px 2px #EF7D00';
+
+
+  document.getElementById('genderStyleM').style.border = '1px solid transparent';
+  document.getElementById('genderStyleM').style.borderRadius = '40px';
+  document.getElementById('genderStyleM').style.padding = '0px';
+  document.getElementById('genderStyleM').style.boxShadow = '2px 2px 2px black';
+
+
+  document.getElementById('genderStyleE').style.border = '1px solid transparent';
+  document.getElementById('genderStyleE').style.borderRadius = '40px';
+  document.getElementById('genderStyleE').style.padding = '0px';
+  document.getElementById('genderStyleE').style.boxShadow = '1px 1px 1px black';
+
+}
+});
+
+
+let radioM = document.getElementById('radioM');
+
+radioM.addEventListener("focus", (event) => {
+let focusM = true;
+let focusE = false;
+let focusF = false;
+
+if(focusM = true) {
+  document.getElementById('genderStyleM').style.border = '2px solid rgb(182, 216, 232)';
+  document.getElementById('genderStyleM').style.borderRadius = '40px';
+  document.getElementById('genderStyleM').style.padding = '5px';
+  document.getElementById('genderStyleM').style.boxShadow = '2px 2px 2px #EF7D00';
+
+
+  document.getElementById('genderStyleF').style.border = '1px solid transparent';
+  document.getElementById('genderStyleF').style.borderRadius = '40px';
+  document.getElementById('genderStyleF').style.padding = '0px';
+  document.getElementById('genderStyleF').style.boxShadow = '2px 2px 2px black';
+
+
+  document.getElementById('genderStyleE').style.border = '1px solid transparent';
+  document.getElementById('genderStyleE').style.borderRadius = '40px';
+  document.getElementById('genderStyleE').style.padding = '0px';
+  document.getElementById('genderStyleE').style.boxShadow = '1px 1px 1px black';
+ 
+}
+});
+
+
+let radioE = document.getElementById('radioE');
+
+radioE.addEventListener("focus", (event) => {
+  let focusE = true;
+let focusM = false;
+let focusF = false;
+
+if(focusE = true) {
+  document.getElementById('genderStyleE').style.border = '2px solid rgb(254, 215, 254)';
+  document.getElementById('genderStyleE').style.borderRadius = '40px';
+  document.getElementById('genderStyleE').style.padding = '5px';
+  document.getElementById('genderStyleE').style.boxShadow = '1px 1px 1px #EF7D00';
+
+
+  document.getElementById('genderStyleF').style.border = '1px solid transparent';
+  document.getElementById('genderStyleF').style.borderRadius = '40px';
+  document.getElementById('genderStyleF').style.padding = '0px';
+  document.getElementById('genderStyleF').style.boxShadow = '2px 2px 2px black';
+
+  document.getElementById('genderStyleM').style.border = '1px solid transparent';
+  document.getElementById('genderStyleM').style.borderRadius = '40px';
+  document.getElementById('genderStyleM').style.padding = '0px';
+  document.getElementById('genderStyleM').style.boxShadow = '2px 2px 2px black';
+ 
+}
+});
+
+   
+
+
+
+    
+
+
+  </script>
+
         </div>
+
+
+
 
         <div class="form-outline">
           <input type="text" id="userCpf" name="userCpf" pattern="[0-9]{11}" maxlength="11" minlength="11" required
