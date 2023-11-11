@@ -15,11 +15,20 @@
 
 }
 
+body {
+
+    width: 100% !important;
+
+}
+
+
 .containerAll {
-
-    width: 100%;
+display: flex;
+height: 100%;
     opacity: 1;
-
+    width: auto;
+    overflow-y: hidden;
+margin-left: 8%;
 }
 
 
@@ -147,19 +156,21 @@ footer {
 .containerProfileAll {
 
 display: flex;
-gap: 7em;    
-overflow-y: hidden;
-
+gap: 8%;    
+width: auto;
+justify-content: center;
+height: 100%;
 }
 
 .containerDataProfile {
 
  
     width: auto;
-    min-width: 650px;
-    max-width: 650px;
+    min-width: 600px;
+    max-width: 600px;
     padding-left: 5em;
     margin-bottom:7.3%;
+    margin-right: 1em;
 
     position: relative;
 }
@@ -180,7 +191,7 @@ width: auto;
     box-shadow: 1px 1px 2px 2px #EF7D00;
     padding: 25px;
     border-radius: 20px;
-    margin-top: 2.3em;
+    margin-top: 11.5%;
     width: auto;
 }
 
@@ -243,8 +254,9 @@ width: auto;
 
 
     position: relative;
-
-    
+    height: auto;
+    width: auto;
+        display: block;
 
  
 }
@@ -499,32 +511,41 @@ width: auto;
 
 .locationAnchorImage {
    
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 40px;
     box-shadow: 2px 2px 2px black;
     width: auto;
-    min-width:5%;
-    max-width: 5%;
+    min-width:85%;
+    max-width: 85%;
 
     background-color: white;
-    transition: 1s;
-    position: fixed;
-bottom: 13%;
-left: 90%;
-z-index: 50;
+    transition: 0.5s;
 
 }
+
+.containerImageLocation {
+position: fixed;
+z-index: 50;
+    left: 90%;
+    top:75%;
+}
+
+    .positionImageRelative {
+
+        position: relative;
+
+    }
 
 .locationAnchorImage:hover {
  
  
     border: 2px solid #EF7D00 !important;
-    border-radius: 90px;
-    box-shadow: 2px 2px 2px black;
+   
+  
     width: auto;
   
-    min-width: 6%;
-    max-width: 6%;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .containerGender {

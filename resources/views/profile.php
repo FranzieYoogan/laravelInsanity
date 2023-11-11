@@ -511,12 +511,19 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
         <div class="positioningData2">
           <h1 class="textStyleProfile" style="border-top: 3px solid #004070;">User Unity<span class="dataPushing" >
               <?php echo $userInstitution; ?>
-            </span></h1>
-        </div>
 
-        <div style="position: relative;">
+              <div class="positionImageRelative">
+        <div class="containerImageLocation">
       <a class="locationAnchor" href="location.php"><img class="locationAnchorImage" src="./public/img/profile/map.png" alt="location.php"></a>
     </div>
+    </div>
+            </span></h1>
+
+     
+
+        </div>
+
+
       </section>
 
     </section>
