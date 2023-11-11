@@ -487,12 +487,15 @@ width: auto;
 
 .spanIdStyle {
 
-    font-size: 16px;
+    width: auto;
+    text-align: center;
+    font-size: 70%;
     border: 2px solid #EF7D00;
     border-radius: 50px !important;
-    padding: 5px;
+    padding: 5px 12px 5px 12px;
   position: relative;
   bottom: 3px;
+  left: 5px;
   text-shadow: 2px 2px black !important;
     background-color: #004070 !important;
 
