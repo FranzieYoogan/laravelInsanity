@@ -29,6 +29,7 @@ if (isset($_SESSION['learning_pure_php'])) {
       $userPostCode = $row['userPostCode'];
       $userGender = $row['userGender'];
       $userInstitution = $row['userInstitution'];
+      $userState = $row['userState'];
       $userPhone = $row['userPhone'];
       $userPhoto = $row['userPhoto'];
 
@@ -1134,7 +1135,7 @@ function triggerCloseInputZipCode() {
           <h1 class="textStyleProfile" style="border-top: 3px solid #004070;">User Unity<span id="userUnity" class="dataPushing" >
               <?php echo $userInstitution; ?>
            
-              <button type="submit" class="buttonSendStyleProfile" name="submitUnity" id="submitUnity"
+              <button type="button" class="buttonSendStyleProfile" name="submitUnity" id="submitUnity"
                 onmouseover="mouseOverThingUnity()" onmouseout="mouseOutUnity()" onclick="triggerInputInputUnity()"><img
                   class="imgButtonSendProfile" src="./public/img/profile/blacksmith.png" alt=""></button></span></h1>
             </span></h1>
@@ -1146,13 +1147,10 @@ function triggerCloseInputZipCode() {
 
 include('connection.php');
 
-if(isset($_POST['submitUnity'])) {
-$conn = mysqli_connect($host, $user, $pass, $db);
-$userEmail = $_SESSION['learning_pure_php'];
-$queryInstitution = "SELECT * from users WHERE userEmail = '$userEmail' AND  userState = 'RJ' ";
-$result = mysqli_query($conn, $queryInstitution);
 
-if ($result) {
+
+  
+    if ($userState == 'RJ') {
 
   echo "
   <form action='' method='POST' id='menuChangingUnity'>
@@ -1176,19 +1174,16 @@ if ($result) {
 
 
 }
-}
+
+
 ?>
 
 
   <?php
 
-include('connection.php');
-$conn = mysqli_connect($host, $user, $pass, $db);
-$userEmail = $_SESSION['learning_pure_php'];
-$queryInstitution2 = "SELECT * from users WHERE userEmail = '$userEmail' AND  userState = 'SP' ";
-$result2 = mysqli_query($conn, $queryInstitution2);
 
-if ($result2) {
+
+if ($userState == 'SP') {
 
   echo "
   <form action='' method='POST' id='menuChangingUnity'>
@@ -1211,6 +1206,7 @@ if ($result2) {
           ";
 
 }
+
           ?>
 
 
