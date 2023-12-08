@@ -9,7 +9,7 @@
 $opacity = false;
  include('connection.php');
 
-if($_POST){
+if(isset($_POST['submitLogin'])){
   $userEmail = $_POST['userEmail'];
   $userPassword = $_POST['userPassword'];
   $conn = mysqli_connect($host,$user,$pass,$db);
@@ -25,7 +25,7 @@ if($_POST){
 
   
   }
-    session_start();
+  
     $_SESSION['learning_pure_php'] = 'true';
     $_SESSION['learning_pure_php'] = $userName;
     $_SESSION['learning_pure_php'] = $userEmail;
@@ -120,7 +120,7 @@ if($_POST){
             </div>
   
             <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="submit"  class="btn btn-primary btn-lg buttonStyle" style="padding-left: 2.5rem; padding-right: 2.5rem;">
+              <button type="submit" name="submitLogin"  class="btn btn-primary btn-lg buttonStyle" style="padding-left: 2.5rem; padding-right: 2.5rem;">
                 Login</button>
 
           
