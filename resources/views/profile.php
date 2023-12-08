@@ -939,7 +939,7 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
             </span></h1>
 
             <div class="form-outline mb-4 containerMenuButton" id='containerMenuPhone' style="display: none;">
-            <input type="text" id="userPhone" pattern="[0-9]+" name="userPhone" class="form-control inputMenuChanging" required/>
+            <input type="text" id="userPhone" pattern="[0-9]+" maxlength="11" minlength="11" name="userPhone" class="form-control inputMenuChanging" required/>
             <label class="form-label" for="userPhone">User Phone</label>
 
 

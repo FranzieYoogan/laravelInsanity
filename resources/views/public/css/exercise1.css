@@ -2,24 +2,24 @@
 
 body {
 
-    background-image: url('./public/img/profile/profile.gif') !important;
-    background-size: 100%;
-    overflow-y: hidden;
 
 }
 
 .containerAllProfile {
 
 
-    display: block;
-height: 100%;
+    width: auto;
+height: 78.7%;
+    background-image: url('./public/img/profile/profile.gif') ;
+background-size: 100%;
+  
 }
 
 footer {
 
     display: block;
     position: absolute !important;
-    bottom: 0 !important;
+    bottom: auto !important;
 width: 100%;
 
 }
@@ -27,10 +27,10 @@ width: 100%;
 .textProfile {
 
 
-    margin-bottom: 2%;
+
     width: 100%;
 
-    margin-top: 2%;
+    ;
   
  
 }
@@ -40,12 +40,14 @@ width: 100%;
     color: white;
     text-shadow: 3px 3px black;
     text-align: center;
-    margin-top: 1em;
+    position: relative;
+    top: 15px;
+    font-size: 130%;
 }
 
 .spanH1TextProfile {
 
-    border-bottom: 3px solid orange !important;
+
 
 }
 
@@ -54,53 +56,57 @@ width: 100%;
 
     display: flex !important;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 3%;
     align-content: center;
+    width: auto;
 height: auto;
-min-height: 250px;
-max-height: 250px;  
 
 
+
+}
+
+.inputStyleProfile {
+
+
+    width: 20%;
 }
 
 .inputProfile {
 
     width: auto;
     
-    max-width: 280px;
-    min-width: 200px;
+
 
 }
 
 .borderProfile {
 
     border: 2px solid black;
-padding: 15px;
+    padding: 1%;
     background-color: purple;
     border-radius: 20px !important;
     width: auto;
- 
-    height: auto;
-    min-height: 270px;
-    max-height: 270px;
+    height: auto!important;
+    margin-top: 1%;
     box-shadow: 2px 2px 2px black;
-    
-
+    display: flex;
+    justify-content: center;
 }
+
 
 .containerButtonProfile {
 
-    display: flex;
-    justify-content: center;
-   
+            width: auto;
 
+   
 }
 
 .buttonDangerous {
-    margin-top: 1em;
-    width: auto;
-    min-width: 200px;
-    max-width: 200px;
+
+    margin-top: 10%;
+    width: 100% !important;
+
+    
 transition: 0.5s;
 
 }
@@ -123,8 +129,10 @@ transition: 0.5s;
     background-color: orange;
     text-align: center;
     width: auto;
-    min-width: 250px;
+    max-width: 150px;
     max-width: 250px;
+
+    height: auto;
     font-weight: 900;
 }
 
@@ -144,14 +152,15 @@ transition: 0.5s;
 .resultStyle {
 
     position: relative;
-    top: 2em;
+    top: 1em;
     width: auto;
     text-align: start;
     font-size: 70%;
     color: black;
     border: 2px solid white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     background-color: orange;
     font-weight: 900;
+    
 }

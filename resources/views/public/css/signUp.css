@@ -27,7 +27,9 @@ footer {
 
 .selectStyleSignUp {
 
-    width: 50% !important;
+    width: auto !important;
+    min-width: 40%;
+    max-width: auto;
     color: #EF7D00;
     border: 1px solid #004070;
    
@@ -47,7 +49,7 @@ footer {
 
 .selectStyleSignUpInstitution {
 
-    width: 28% !important;
+    width: 30% !important;
     color: #EF7D00;
     border: 1px solid #004070;
     
@@ -67,7 +69,9 @@ footer {
 
 .selectStyleSignUpState {
 
-    width: 15% !important;
+    width: auto !important;
+    min-width: 20%;
+    max-width: auto;
     color: #EF7D00;
     border: 1px solid #004070;
    

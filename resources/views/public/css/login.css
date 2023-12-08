@@ -32,6 +32,12 @@ footer {
 
 }
 
+.formStyle {
+
+    width: auto;
+
+}
+
 .imageStyle {
     position: relative;
     display: block;
@@ -46,6 +52,8 @@ bottom: 8em;
     box-shadow: 2px 2px 2px black;
     opacity: 0;
 }
+
+
 
 .inputStyle{
     border: 2px solid #004070 !important;

@@ -49,8 +49,7 @@ if (isset($_POST['submit'])) {
     <section class="containerAllProfile">
 
     <section  class="textProfile">
-    <h1 class="textProfileStyle" style="font-weight: 900;"> WELCOME <br>
-       <span class="spanH1TextProfile"> <?php if (isset($_SESSION['learning_pure_php'])) {
+    <h1 class="textProfileStyle" style="font-weight: 900;"> <span class="spanH1TextProfile"> <?php if (isset($_SESSION['learning_pure_php'])) {
             echo strtoupper($userNameRow);
         } ?>
         </span>
@@ -61,7 +60,7 @@ if (isset($_POST['submit'])) {
 
 <section class="containerInputProfile">
     <div class="borderProfile">
-        <form action="" method="post">
+        <form action="" method="post" class="formStyle">
 
             <div>
 
@@ -75,7 +74,7 @@ if (isset($_POST['submit'])) {
 
             </div>
             <div class="containerButtonProfile">
-                <div>
+          
                     <div>
                         <button type="submit" id="submit" name="submit"
                             class="btn btn-outline-danger btn-rounded buttonDangerous"
@@ -96,7 +95,7 @@ if (isset($_POST['submit'])) {
                             } ?>
                         </h1>
 
-                    </div>
+                   
                 </div>
 
             </div>

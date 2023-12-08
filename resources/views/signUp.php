@@ -290,7 +290,7 @@ if(focusE = true) {
 
           <select class="form-select selectStyleSignUp" name="userMajor" id="userMajor" required>
 
-            <option selected>Select your desirable major</option>
+            <option selected>desirable major</option>
             <option value="frontend" class="optionStyle">FRONTEND</option>
             <option value="backend" class="optionStyle">BACKEND</option>
             <option value="fullstack" class="optionStyle">FULLSTACK</option>
@@ -300,7 +300,7 @@ if(focusE = true) {
 
 
           <select class="form-select selectStyleSignUpState" name="userState" id="userState" required>
-            <option selected class="optionStyle">State</option>
+            <option selected class="optionStyle">St</option>
             <option value="RJ" class="optionStyle">RJ</option>
             <option value="SP" class="optionStyle">SP</option>
 
@@ -338,7 +338,7 @@ if(focusE = true) {
           <select class="form-select selectStyleSignUpInstitution" name="userInstitution" id="userInstitutionRJ"  required
             style="display: none;">
 
-            <option disabled selected>Select your unity</option>
+            <option disabled selected>Unity</option>
             <option value="Bangu" class="optionStyle">BANGU</option>
             <option value="Niteroi" class="optionStyle">NITERÓI</option>
 
@@ -349,7 +349,7 @@ if(focusE = true) {
           <select class="form-select selectStyleSignUpInstitution" name="userInstitution" id="userInstitutionSP" required
             style="display: none;">
 
-            <option disabled selected>Select your unity</option>
+            <option disabled selected>Unity</option>
             <option value="JardimPaulista" class="optionStyle">JARDIM PAULISTA</option>
             <option value="Adamantina" class="optionStyle">ADAMANTINA</option>
 
@@ -360,9 +360,9 @@ if(focusE = true) {
         </section>
 
 
-        <section class="containerRadio">
+        <section class="containerRadio" style="position: relative;">
 
-          <p class="pStyle">Would you finish Undertale as a...</p>
+          <p class="pStyle">Did you finish Undertale as a...</p>
           <input type="radio" class="btn-check checkPacifist" name="radio" value="pacifist" id="radioPacifist" required>
           <label class="btn pacifist" for="radioPacifist">PACIFIST</label>
 
