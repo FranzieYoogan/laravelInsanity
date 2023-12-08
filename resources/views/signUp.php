@@ -102,14 +102,14 @@ setTimeout(() => {
 
 
 
-<section class="containerReset" id="containerReset">
+<section class="containerReset" >
 
 
 
 
 
 
-  <form class="formSignUpStyle" action="" method="POST">
+  <form class="formSignUpStyle" action="" method="POST" id="containerReset2">
     <div class="card text-center cardStyle">
       <div class="card-header h5 text-white bg-primary titleStyle">ACCOUNT SIGNUP</div>
       <div class="card-body px-5">
@@ -404,5 +404,19 @@ if(focusE = true) {
 
 </section>
 
+
+<script>
+
+window.addEventListener('load', function () {
+  document.getElementById('containerReset2').style.transition = '1s';
+  document.getElementById('containerReset2').style.opacity = '1';
+
+    setTimeout(() => {
+      document.getElementById('containerReset2').style.transition = '0s';
+    }, 3000);
+ 
+})
+
+</script>
 
 <?php include('footer.php') ?>

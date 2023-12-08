@@ -17,7 +17,7 @@
 
 
 
-      <section class="containerReset">
+      <section class="containerReset" id="containerReset">
 
         <form class="formStyleChangePassword" action="" method="POST">    
               <div class="card text-center cardStyle">
@@ -154,8 +154,19 @@ header("Location: login.php");
 
 ?>
 
+<script>
+window.addEventListener('load', function () {
+
+  document.getElementById('containerReset').style.transition= '0.5s';
+    document.getElementById('containerReset').style.left = '0%';
 
 
+    setTimeout(() => {
+      document.getElementById('containerReset').style.transition= '0s';
+    }, 700);
+})
+
+</script>
 
 
 

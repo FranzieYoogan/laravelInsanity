@@ -9,7 +9,7 @@
 
     height: auto;
     width: auto;
-    
+
 }  
 
 
@@ -382,6 +382,7 @@ font-size: 90%;
         min-width: 50%;
         max-width: auto;
         height: auto;
+        opacity: 0;
 
     }
 
