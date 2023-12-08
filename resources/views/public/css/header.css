@@ -10,7 +10,8 @@ body {
     max-height: 50px;
     border: 2px solid white;
     box-shadow: 2px 2px 2px black;
-
+  position: relative;
+  left: -130%;
 }
 
 .navbar-toggler-icon {

@@ -1,3 +1,6 @@
+
+
+
 <?php include('./head.inc.php') ?>
 <?php include('./header.php') ?>
 
@@ -623,7 +626,11 @@ if (isset($_POST['submitUserUnityChangeSP'])) {
 
 </script>
 
+
 <section class="containerAll" id="containerAll">
+
+
+
 
 <?php if ($animation == true) {
 
@@ -676,6 +683,18 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
 
   <section class="containerProfileAll" id="containerProfileAll" style="opacity: 1;">
 
+  <script>
+
+
+window.addEventListener('load', function ()  {
+
+
+document.getElementById('containerProfileAll').style.transition = '0.5s';
+document.getElementById('containerProfileAll').style.left = '0%';
+
+ })
+
+</script>
     <section class="containerProfile1">
 
 
@@ -1232,7 +1251,6 @@ function triggerCloseInputUnity() {
 
   
 </section>
-
 
 
 <?php include('footer.php') ?>

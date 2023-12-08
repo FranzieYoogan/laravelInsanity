@@ -11,7 +11,23 @@
 <!-- <?php session_start(); ?> -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary navStyles">
   <div class="container-fluid">
-  <a class="navbar-brand" href="./home.php"><img class="logoStyle rounded-circle" src="./public/img/logo/loginLogo.png" alt=""></a>
+  <a class="navbar-brand"  href="./home.php"><img id="logo" class="logoStyle rounded-circle" src="./public/img/logo/loginLogo.png" alt=""></a>
+
+    <script>
+
+window.addEventListener('load', function () {
+
+
+  document.getElementById('logo').style.transition = '0.5s';
+  document.getElementById('logo').style.left = '0%';
+
+
+
+
+})
+
+    </script>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
