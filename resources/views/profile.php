@@ -648,9 +648,50 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
 
     <div>
 
-      <label class="labelFileInput">
-        <img class="imageFileInputButton" src="./public/img/profile/fileInput.png" alt=""><input type="file" name="file"
+      <label class="labelFileInput" id="labelFileInput"  style="position: relative;">
+      <img id="buttonSendClose" class="buttonSendClose" src="./public/img/profile/close.png" alt="" onclick="closeSendImage()"
+       onmouseover="mouseButtonSendClose()" onmouseout="mouseOutButtonSendClose()">
+        <img class="imageFileInputButton" id="imageFileInputButton"  src="./public/img/profile/fileInput.png" alt=""><input id="imageFileInputButton1"  type="file" name="file"
           id="file" class="fileStyleProfile"></label>
+
+
+          
+
+         
+
+        <script>
+
+          function mouseOutButtonSendClose() {
+
+            document.getElementById('imageFileInputButton').style.opacity = '1';
+
+            document.getElementById('imageFileInputButton1').style.color = 'orange';
+          
+          }
+
+          function mouseButtonSendClose() {
+
+            document.getElementById('imageFileInputButton').style.opacity = '0.5';
+          
+           
+          
+            document.getElementById('imageFileInputButton1').style.color = 'orange';
+          }
+
+          function closeSendImage() {
+
+  
+            document.getElementById('formImageProfile').style.display = 'none';
+      
+            document.getElementById('imageFileInputButton1').disabled = 'true';
+            window.location.reload();
+          }
+
+        </script>
+
+
+        
+          
 
       <button class="buttonSendStyleProfile" name="submitImage" id="submitImageImage" onclick="triggerInput()"><img
           class="imgButtonSendProfile" src="./public/img/profile/send.png" alt="" ></button>
@@ -693,8 +734,9 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
 
 
           document.getElementById("formImageProfile").style.visibility = 'visible';
-          document.getElementById("formImageProfile").style.opacity = 1;
+          document.getElementById("formImageProfile").style.display = 'block';
           document.getElementById("file").style.width = "75%";
+       
         }
 
 

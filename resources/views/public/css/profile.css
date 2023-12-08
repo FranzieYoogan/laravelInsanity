@@ -265,9 +265,9 @@ width: auto;
 
 .formImageProfile {
   
-        transition: 3s;
+
        
-        opacity: 0.01;
+
     visibility: hidden;
 
     position: fixed;
@@ -290,10 +290,10 @@ width: auto;
 }
 
 .fileStyleProfile {
-    transition: 3s;
+
     margin-left: 2em;
     border-bottom: 2px solid #EF7D00;
-    width: 3%;
+    width: 75%;
 }   
 
 
@@ -317,6 +317,7 @@ width: auto;
     box-shadow: 2px 2px 2px black;
     border: 2px solid #EF7D00;
     padding: 5px;
+   
 }
 
 .buttonSendStyleProfile {
@@ -344,6 +345,31 @@ width: auto;
     padding: 5px;
     background-color: transparent;
 }
+
+.buttonSendClose {
+
+    position: absolute;
+    bottom: 30px;
+    left: -1%;
+    cursor: pointer;
+  
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.buttonSendClose:hover {
+
+    width: 40px;
+    bottom: 30px;
+    left: -3%;
+    
+
+
+}
+
+
+
+
 
 .alertProfile {
 
