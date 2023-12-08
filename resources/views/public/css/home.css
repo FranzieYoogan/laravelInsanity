@@ -33,7 +33,7 @@ body {
     left: 3%;
     font-family: 'minecraft';
     position: absolute;
-    top: 80%;
+    top: 75%;
 
     text-shadow: 2px 2px 2px black;
 
@@ -44,5 +44,5 @@ footer {
 
     display: block;
     position: absolute;
-    bottom: 0% !important;
+    bottom: 0 !important;
 }
