@@ -217,10 +217,393 @@ if (isset($_POST['submitUserNameChange'])) {
 
 
   }
+}
+
+
+  if (isset($_POST['submitUserPhoneChange'])) {
+
+    include('connection.php');
+    $conn = mysqli_connect($host, $user, $pass, $db);
+    $userPhone = $_POST['userPhone'];
+  
+    if ($userPhone != '') {
+  
+  
+  
+  
+      $queryPhone = "UPDATE users
+    SET userPhone = '$userPhone' 
+    WHERE userEmail = '$userEmail'";
+      $resultQueryPhone = mysqli_query($conn, $queryPhone);
+  
+  
+      if ($resultQueryPhone) {
+  
+  
+  
+        echo "
+  
+  
+    <div style='position: relative;'>
+    <audio id='forgingSound' controls autoplay track style='visibility: hidden; position: absolute;'>
+    <source id='forgingSound' src='./public/img/profile/blacksmithSound.mp4'>
+    </audio>
+    <img class='rounded-circle loadingImageProfile' src='./public/img/profile/blacksmith.gif' alt=''>
+  
+    </div>  ";
+  
+  
+  
+        echo "<script> 
+    
+    setTimeout(() => {
+  
+   
+   
+      window.location.href = 'profile.php';
+  
+  
+      
+      }, 2000) 
+  
+      </script>";
+  
+      }
+    } else {
+  
+    
+  
+      echo "  <div class='alert alert-danger alertStyle' role='alert'>
+    ERROR!! COULD YOU TRY IT AGAIN? <img class='errorIconProfile' src='./public/img/profile/error.png' alt=''>
+  </div>";
+  
+      echo "<script> 
+    
+    setTimeout(() => {
+  
+   
+   
+      window.location.href = 'profile.php';
+  
+  
+      
+      }, 2000) 
+  
+      </script>";
+  
+  
+  
+    }
+
+}
+
+if (isset($_POST['submitUserAddressChange'])) {
+
+  include('connection.php');
+  $conn = mysqli_connect($host, $user, $pass, $db);
+  $userAddress = $_POST['userAddress'];
+
+  if ($userPhone != '') {
+
+
+
+
+    $queryAddress = "UPDATE users
+  SET userAddress = '$userAddress' 
+  WHERE userEmail = '$userEmail'";
+    $resultQueryAddress = mysqli_query($conn, $queryAddress);
+
+
+    if ($resultQueryAddress) {
+
+
+
+      echo "
+
+
+  <div style='position: relative;'>
+  <audio id='forgingSound' controls autoplay track style='visibility: hidden; position: absolute;'>
+  <source id='forgingSound' src='./public/img/profile/blacksmithSound.mp4'>
+  </audio>
+  <img class='rounded-circle loadingImageProfile' src='./public/img/profile/blacksmith.gif' alt=''>
+
+  </div>  ";
+
+
+
+      echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+    }
+  } else {
+
+  
+
+    echo "  <div class='alert alert-danger alertStyle' role='alert'>
+  ERROR!! COULD YOU TRY IT AGAIN? <img class='errorIconProfile' src='./public/img/profile/error.png' alt=''>
+</div>";
+
+    echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+
+
+  }
+
+}
+
+if (isset($_POST['submitUserZipCodeChange'])) {
+
+  include('connection.php');
+  $conn = mysqli_connect($host, $user, $pass, $db);
+  $userZipCode = $_POST['userZipCode'];
+
+  if ($userPhone != '') {
+
+
+
+
+    $queryZipCode = "UPDATE users
+  SET userPostCode = '$userZipCode' 
+  WHERE userEmail = '$userEmail'";
+    $resultQueryZipCode = mysqli_query($conn, $queryZipCode);
+
+
+    if ($resultQueryZipCode) {
+
+
+
+      echo "
+
+
+  <div style='position: relative;'>
+  <audio id='forgingSound' controls autoplay track style='visibility: hidden; position: absolute;'>
+  <source id='forgingSound' src='./public/img/profile/blacksmithSound.mp4'>
+  </audio>
+  <img class='rounded-circle loadingImageProfile' src='./public/img/profile/blacksmith.gif' alt=''>
+
+  </div>  ";
+
+
+
+      echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+    }
+  } else {
+
+  
+
+    echo "  <div class='alert alert-danger alertStyle' role='alert'>
+  ERROR!! COULD YOU TRY IT AGAIN? <img class='errorIconProfile' src='./public/img/profile/error.png' alt=''>
+</div>";
+
+    echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+
+
+  }
+
+}
+
+if (isset($_POST['submitUserUnityChangeRJ'])) {
+
+  include('connection.php');
+  $conn = mysqli_connect($host, $user, $pass, $db);
+  $userUnityRJ = $_POST['userInstitutionRJ'];
+
+  if ($userUnityRJ) {
+
+
+
+
+    $queryUnityRJ = "UPDATE users
+  SET userInstitution = '$userUnityRJ' 
+  WHERE userEmail = '$userEmail'";
+    $resultQueryUnity = mysqli_query($conn, $queryUnityRJ);
+
+
+    if ($resultQueryUnity) {
+
+
+
+      echo "
+
+
+  <div style='position: relative;'>
+  <audio id='forgingSound' controls autoplay track style='visibility: hidden; position: absolute;'>
+  <source id='forgingSound' src='./public/img/profile/blacksmithSound.mp4'>
+  </audio>
+  <img class='rounded-circle loadingImageProfile' src='./public/img/profile/blacksmith.gif' alt=''>
+
+  </div>  ";
+
+
+
+      echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+    }
+  } else {
+
+  
+
+    echo "  <div class='alert alert-danger alertStyle' role='alert'>
+  ERROR!! COULD YOU TRY IT AGAIN? <img class='errorIconProfile' src='./public/img/profile/error.png' alt=''>
+</div>";
+
+    echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+
+
+  }
 
 }
 
 
+if (isset($_POST['submitUserUnityChangeSP'])) {
+  include('connection.php');
+  $conn = mysqli_connect($host, $user, $pass, $db);
+  $userUnitySP = $_POST['userInstitutionSP'];
+
+  if ($userUnitySP != '') {
+
+
+
+
+    $queryUnitySP = "UPDATE users
+  SET userInstitution = '$userUnitySP' 
+  WHERE userEmail = '$userEmail'";
+    $resultQueryUnity = mysqli_query($conn, $queryUnitySP);
+
+
+    if ($resultQueryUnity) {
+
+
+
+      echo "
+
+
+  <div style='position: relative;'>
+  <audio id='forgingSound' controls autoplay track style='visibility: hidden; position: absolute;'>
+  <source id='forgingSound' src='./public/img/profile/blacksmithSound.mp4'>
+  </audio>
+  <img class='rounded-circle loadingImageProfile' src='./public/img/profile/blacksmith.gif' alt=''>
+
+  </div>  ";
+
+
+
+      echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+    }
+  } else {
+
+  
+
+    echo "  <div class='alert alert-danger alertStyle' role='alert'>
+  ERROR!! COULD YOU TRY IT AGAIN? <img class='errorIconProfile' src='./public/img/profile/error.png' alt=''>
+</div>";
+
+    echo "<script> 
+  
+  setTimeout(() => {
+
+ 
+ 
+    window.location.href = 'profile.php';
+
+
+    
+    }, 2000) 
+
+    </script>";
+
+
+
+  }
+
+}
 
 
 
@@ -479,13 +862,16 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
           <h1 class="textStyleProfile">User CPF<span class="dataPushing2">
               <?php echo $resultStringUserCpf; ?>
             </span></h1>
+
+
+            
         </div>
 
 
-
+          <form action="" method="POST" id="menuChangingPhone">
         <div class="positioningData">
-          <h1 class="textStyleProfile">User Phone<span class="dataPushing3">
-
+          <h1 class="textStyleProfile">User Phone<span id='userPhone' class="dataPushing3">
+       
 
               <?php
 
@@ -493,36 +879,347 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
               echo $resultStringUserPhone;
 
               ?>
-            </span></h1>
-        </div>
 
+<button type="button" class="buttonSendStyleProfile" name="submitUserPhoneChange" id="submitImage"
+                onmouseover="mouseOverThingPhone()" onmouseout="mouseOutPhone()" onmouseout="mouseOverThingOut()" onclick="triggerInputInputPhone()"><img
+                  class="imgButtonSendProfile" src="./public/img/profile/blacksmith.png" alt=""></button></span></h1>
+            </span></h1>
+
+            <div class="form-outline mb-4 containerMenuButton" id='containerMenuPhone' style="display: none;">
+            <input type="text" id="userPhone" pattern="[0-9]+" name="userPhone" class="form-control inputMenuChanging" required/>
+            <label class="form-label" for="userPhone">User Phone</label>
+
+
+            <button class="inputMenuButton" id="submitUserPhoneChange" type="submit" name="submitUserPhoneChange"><i
+                class="fa-solid fa-hammer" style="color: #EF7D00"></i></button>
+
+            <button class="inputMenuButton2" type="button" onclick="triggerCloseInputPhone()"  ><i class="fa-solid fa-xmark"
+                style="color: #EF7D00" ></i></button>
+
+        </div>
+        </div>
+        </form>
+
+
+        <script>
+
+
+function mouseOverThingPhone() {
+
+  document.getElementById('userPhone').style.opacity = '0.5';
+
+}
+
+function mouseOutPhone() {
+
+  document.getElementById('userPhone').style.opacity = '1';
+
+}
+
+
+
+function triggerInputInputPhone() {
+
+
+
+  document.getElementById('containerMenuPhone').style.display = 'block';
+  document.getElementById('menuChangingPhone').style.marginTop = '1em';
+}
+</script>
+
+<script>
+
+function triggerCloseInputPhone() {
+
+  document.getElementById('containerMenuPhone').style.display = 'none';
+  window.location.reload();
+
+
+}
+
+</script>
+
+
+        <form action="" method="POST" id="menuChangingAddress">
         <div class="positioningData">
-          <h1 class="textStyleProfile">User Address<span class="dataPushing">
+          <h1 class="textStyleProfile">User Address<span class="dataPushing" style="font-size: 80%;">
               <?php echo ucwords($userAddress); ?>
+
+              <button type="button" class="buttonSendStyleProfile" name="submitUserPhoneChange" id="submitImage"
+                onmouseover="mouseOverThingAddress()" onmouseout="mouseOutAddress()" onmouseout="mouseOverThingOut()" onclick="triggerInputInputAddress()"><img
+                  class="imgButtonSendProfile" src="./public/img/profile/blacksmith.png" alt=""></button></span></h1>
             </span></h1>
+
+            <div class="form-outline mb-4 containerMenuButton" id='containerMenuAddress' style="display: none;">
+            <input type="text" id="userAddress" name="userAddress" class="form-control inputMenuChanging" pattern="[\w\W]+)\s(\d+)" minlength="17" maxlength="35" required/>
+            <label class="form-label" for="userAddress">User Address</label>
+
+
+            <button class="inputMenuButton" id="submitUserAddressChange" type="submit" name="submitUserAddressChange"><i
+                class="fa-solid fa-hammer" style="color: #EF7D00"></i></button>
+
+            <button class="inputMenuButton2" type="button" onclick="triggerCloseInputAddress()"  ><i class="fa-solid fa-xmark"
+                style="color: #EF7D00" ></i></button>
+
         </div>
 
+        </div>
+        </form>
+
+        <script>
+
+
+function mouseOverThingAddress() {
+
+  document.getElementById('userAddress').style.opacity = '0.5';
+
+}
+
+function mouseOutAddress() {
+
+  document.getElementById('userAddress').style.opacity = '1';
+
+}
+
+
+
+function triggerInputInputAddress() {
+
+
+
+  document.getElementById('containerMenuAddress').style.display = 'block';
+  document.getElementById('menuChangingAddress').style.marginTop = '1em';
+}
+</script>
+
+<script>
+
+function triggerCloseInputAddress() {
+
+  document.getElementById('containerMenuAddress').style.display = 'none';
+  window.location.reload();
+
+
+}
+
+</script>
+
+<form action="" method="POST" id="menuChangingZipCode">
         <div class="positioningData2">
           <h1 class="textStyleProfile">User ZipCode<span class="dataPushing">
               <?php echo $resultStringUserPostCode; ?>
+
+              <button type="button" class="buttonSendStyleProfile" name="submitUserPhoneChange" id="submitImage"
+                onmouseover="mouseOverThingZipCode()" onmouseout="mouseOutZipCode()" onmouseout="mouseOverThingOut()" onclick="triggerInputInputZipCode()"><img
+                  class="imgButtonSendProfile" src="./public/img/profile/blacksmith.png" alt=""></button></span></h1>
             </span></h1>
+
+
+
+            <div class="form-outline mb-4 containerMenuButton" id='containerMenuZipCode' style="display: none;">
+            <input type="text" id="userZipCode" name="userZipCode" class="form-control inputMenuChanging" pattern="[0-9]+" minlength="8" maxlength="8" required/>
+            <label class="form-label" for="userZipCode">User ZipCode</label>
+
+
+            <button class="inputMenuButton" id="submitUserZipCodeChange" type="submit" name="submitUserZipCodeChange"><i
+                class="fa-solid fa-hammer" style="color: #EF7D00"></i></button>
+
+            <button class="inputMenuButton2" type="button" onclick="triggerCloseInputZipCode()"  ><i class="fa-solid fa-xmark"
+                style="color: #EF7D00" ></i></button>
+
         </div>
+
+
+        </div>
+
+
+        <script>
+
+
+function mouseOverThingZipCode() {
+
+  document.getElementById('userZipCode').style.opacity = '0.5';
+
+}
+
+function mouseOutZipCode() {
+
+  document.getElementById('userZipCode').style.opacity = '1';
+
+}
+
+
+
+function triggerInputInputZipCode() {
+
+
+
+  document.getElementById('containerMenuZipCode').style.display = 'block';
+  document.getElementById('menuChangingZipCode').style.marginTop = '1em';
+}
+</script>
+
+<script>
+
+function triggerCloseInputZipCode() {
+
+  document.getElementById('containerMenuZipCode').style.display = 'none';
+  window.location.reload();
+
+
+}
+
+</script>
+       
+
+
+
+
+
+<form action="" method="POST" id="menuChangingUnity">
 
         <div class="positioningData2">
           <h1 class="textStyleProfile" style="border-top: 3px solid #004070;">User Unity<span class="dataPushing" >
               <?php echo $userInstitution; ?>
+           
+              <button type="submit" class="buttonSendStyleProfile" name="submitUnity" id="submitUnity"
+                onmouseover="mouseOverThingUnity()" onmouseout="mouseOutUnity()" onclick="triggerInputInputUnity()"><img
+                  class="imgButtonSendProfile" src="./public/img/profile/blacksmith.png" alt=""></button></span></h1>
+            </span></h1>
 
+
+            <div class="form-outline mb-4 containerMenuButton" id='containerMenuUnity' style="display: none;">
+            </form>
+              <?php
+
+include('connection.php');
+
+if(isset($_POST['submitUnity'])) {
+$conn = mysqli_connect($host, $user, $pass, $db);
+$userEmail = $_SESSION['learning_pure_php'];
+$queryInstitution = "SELECT * from users WHERE userEmail = '$userEmail' AND  userState = 'RJ' ";
+$result = mysqli_query($conn, $queryInstitution);
+
+if ($result) {
+
+  echo "
+  <form action='' method='POST' id='menuChangingUnity'>
+            <select class='form-select selectStyleSignUpInstitution' name='userInstitutionRJ' id='userInstitutionRJ'  required>
+
+            <option disabled selected value=''>Select your unity</option>
+            <option value='Bangu' class='optionStyle'>BANGU</option>
+            <option value='Niteroi' class='optionStyle'>NITERÓI</option>
+            
+            </select>
+
+
+            <button class='inputMenuButton' id='submitUserUnityChangeRJ' type='submit' name='submitUserUnityChangeRJ'><i
+            class='fa-solid fa-hammer' style='color: #EF7D00'></i></button>
+
+        <button class='inputMenuButton2' type='button' onclick='triggerCloseInputUnity()'  ><i class='fa-solid fa-xmark'
+            style='color: #EF7D00' ></i></button>
+      
+          </form>
+          ";
+
+
+}
+}
+?>
+
+
+  <?php
+
+include('connection.php');
+$conn = mysqli_connect($host, $user, $pass, $db);
+$userEmail = $_SESSION['learning_pure_php'];
+$queryInstitution2 = "SELECT * from users WHERE userEmail = '$userEmail' AND  userState = 'SP' ";
+$result2 = mysqli_query($conn, $queryInstitution2);
+
+if ($result2) {
+
+  echo "
+  <form action='' method='POST' id='menuChangingUnity'>
+            <div class='form-outline mb-4 containerMenuButton' id='containerMenuUnity'>
+            <select class='form-select selectStyleSignUpInstitution' name='userInstitutionSP' id='userInstitutionSP' required>
+
+              <option disabled selected value=''>Select your unity</option>
+            <option value='JardimPaulista' class='optionStyle'>JARDIM PAULISTA</option>
+            <option value='Adamantina' class='optionStyle'>ADAMANTINA</option>
+
+
+          </select> 
+          
+          <button class='inputMenuButton' id='submitUserUnityChangeSP' type='submit' name='submitUserUnityChangeSP'><i
+          class='fa-solid fa-hammer' style='color: #EF7D00'></i></button>
+
+      <button class='inputMenuButton2' type='button' onclick='triggerCloseInputUnity()'  ><i class='fa-solid fa-xmark'
+          style='color: #EF7D00' ></i></button>
+            </form>
+          ";
+
+}
+          ?>
+
+
+        
+                </div>
+
+        </div>
+  
               <div class="positionImageRelative">
-        <div class="containerImageLocation">
+      
+      
+              <div class="containerImageLocation">
       <a class="locationAnchor" href="location.php"><img class="locationAnchorImage" src="./public/img/profile/map.png" alt="location.php"></a>
     </div>
     </div>
-            </span></h1>
+
+
 
      
 
         </div>
+       
 
+
+        <script>
+
+
+function mouseOverThingUnity() {
+
+  document.getElementById('userUnity').style.opacity = '0.5';
+
+}
+
+function mouseOutUnity() {
+
+  document.getElementById('userUnity').style.opacity = '1';
+
+}
+
+
+
+function triggerInputInputUnity() {
+
+
+
+  document.getElementById('containerMenuUnity').style.display = 'block';
+  document.getElementById('containerMenuUnity').style.marginTop = '1em';
+}
+</script>
+
+<script>
+
+function triggerCloseInputUnity() {
+
+  document.getElementById('containerMenuUnity').style.display = 'none';
+  window.location.reload();
+
+
+}
+
+</script>
 
       </section>
 

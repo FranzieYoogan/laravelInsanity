@@ -374,6 +374,7 @@ width: auto;
     min-width: 300px;
     max-width: 300px;
     display: inline;
+
  
 }
 
@@ -392,11 +393,42 @@ width: auto;
     max-width: 30px;
     transition: 0.3s;
     box-shadow: 2px 2px 2px black;
-    left: 63%;
+    left: 68%;
     top: 13%;
     border: none;
     position: absolute;
+    
    
+}
+
+
+.inputMenuButtonSelect {
+
+    width: auto;
+    min-width: 30px;
+    max-width: 30px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px black;
+    left: 68%;
+    top: 10%;
+    border: none;
+    position: absolute;
+    
+   
+}
+
+
+.inputMenuButtonSelect:hover {
+
+    width: auto;
+    max-width: 40px;
+    min-width: 40px;
+
+    border: #EF7D00 2px solid;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: transparent;
 }
 
 .inputMenuButton2 {
@@ -406,10 +438,11 @@ width: auto;
     max-width: 30px;
     transition: 0.3s;
     box-shadow: 2px 2px 2px black;
-    left: 73%;
+    left: 80%;
     border: none;
     position: absolute;
     top: 13%;
+
 }
 
 .inputMenuButton:hover {
@@ -592,4 +625,43 @@ width: auto;
 min-width: 30px;
 max-width: 30px;
 
+}
+
+.selectStyleSignUp {
+
+    width: 60% !important;
+    color: #EF7D00;
+    border: 1px solid #004070;
+   
+
+ 
+}
+
+.selectStyleSignUp:focus, .selectStyleSignUp:active {
+
+      
+        box-shadow: 2px 2px 2px 2px #EF7D00 !important;
+        outline: solid 2px #EF7D00 !important;
+        border: none !important;
+ 
+}
+
+
+.selectStyleSignUpInstitution {
+
+    width: 60% !important;
+    color: #EF7D00;
+    border: 1px solid #004070;
+
+
+ 
+}
+
+.selectStyleSignUpInstitution:focus, .selectStyleSignUpInstitution:active {
+
+      
+        box-shadow: 2px 2px 2px 2px #EF7D00 !important;
+        outline: solid 2px #EF7D00 !important;
+        border: none !important;
+ 
 }
