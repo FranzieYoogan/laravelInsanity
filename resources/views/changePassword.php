@@ -35,6 +35,11 @@
         </div>
 
         <div class="form-outline">
+            <input type="text" id="typeId" name="userId" pattern="[0-9]" maxlength="11"  required class="form-control my-3 inputResetStyle" />
+            <label class="form-label labelResetStyle" for="typeId">Enter your StudentID</label>
+        </div>
+
+        <div class="form-outline">
             <input type="text" id="typeCPF" name="userCpf" pattern="[0-9]{11}" maxlength="11" minlength="11" required class="form-control my-3 inputResetStyle" />
             <label class="form-label labelResetStyle" for="typeCPF">Enter your CPF</label>
         </div>
@@ -89,6 +94,7 @@ if($_POST && isset($_POST['submit'])){
 
   $userPassword = $_POST['userPassword'];
   $userEmail = $_POST['userEmail'];
+  $userId =  $_POST['userId'];
   $userCpf = $_POST['userCpf'];
 $passwordConfirmation = $_POST['passwordConfirmation'];
   $userQuestion = $_POST['radio'];
@@ -97,7 +103,7 @@ $passwordConfirmation = $_POST['passwordConfirmation'];
 
   $passwordConfirmation = $_POST['passwordConfirmation'];
   $conn = mysqli_connect($host,$user,$pass,$db);
-  $sql = "SELECT * FROM users WHERE userEmail = '$userEmail' AND userCpf = '$userCpf' AND userQuestion = '$userQuestion'";
+  $sql = "SELECT * FROM users WHERE userEmail = '$userEmail' AND userCpf = '$userCpf' AND userQuestion = '$userQuestion' AND userId = '$userId'";
   $resultSql = mysqli_query($conn,$sql);
   if($passwordConfirmation == $userPassword and mysqli_num_rows($resultSql) == 1) {
 
