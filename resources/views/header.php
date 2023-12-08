@@ -21,8 +21,9 @@ window.addEventListener('load', function () {
   document.getElementById('logo').style.transition = '0.5s';
   document.getElementById('logo').style.left = '0%';
 
-
-
+  setTimeout(() => {
+    document.getElementById('logo').style.transition = '0s';
+  }, 700);
 
 })
 
