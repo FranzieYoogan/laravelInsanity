@@ -860,7 +860,7 @@ document.getElementById('containerProfileAll').style.left = '0%';
         <form action="" method="POST" class="menuChanging" id="menuChangingName">
 
           <div class="form-outline mb-4 containerMenuButton">
-            <input type="text" id="userName" name="userName" class="form-control inputMenuChanging" />
+            <input type="text" id="userName" name="userName" pattern="[a-zA-Z ]+" class="form-control inputMenuChanging" maxlength="30" required />
             <label class="form-label" for="userName">Full Name</label>
 
             <button class="inputMenuButton" id="submitUserNameChange" type="submit" name="submitUserNameChange"><i
