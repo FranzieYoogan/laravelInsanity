@@ -942,7 +942,7 @@ function triggerCloseInputPhone() {
 
         <form action="" method="POST" id="menuChangingAddress">
         <div class="positioningData">
-          <h1 class="textStyleProfile">User Address<span class="dataPushing" style="font-size: 80%;">
+          <h1 class="textStyleProfile">User Address<span id="userAddress" class="dataPushing" style="font-size: 80%;">
               <?php echo ucwords($userAddress); ?>
 
               <button type="button" class="buttonSendStyleProfile" name="submitUserPhoneChange" id="submitImage"
@@ -1006,7 +1006,7 @@ function triggerCloseInputAddress() {
 
 <form action="" method="POST" id="menuChangingZipCode">
         <div class="positioningData2">
-          <h1 class="textStyleProfile">User ZipCode<span class="dataPushing">
+          <h1 class="textStyleProfile">User ZipCode<span id="userZipCode" class="dataPushing">
               <?php echo $resultStringUserPostCode; ?>
 
               <button type="button" class="buttonSendStyleProfile" name="submitUserPhoneChange" id="submitImage"
@@ -1079,7 +1079,7 @@ function triggerCloseInputZipCode() {
 <form action="" method="POST" id="menuChangingUnity">
 
         <div class="positioningData2">
-          <h1 class="textStyleProfile" style="border-top: 3px solid #004070;">User Unity<span class="dataPushing" >
+          <h1 class="textStyleProfile" style="border-top: 3px solid #004070;">User Unity<span id="userUnity" class="dataPushing" >
               <?php echo $userInstitution; ?>
            
               <button type="submit" class="buttonSendStyleProfile" name="submitUnity" id="submitUnity"
