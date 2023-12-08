@@ -29,6 +29,7 @@ footer {
   opacity: 1 !important;
   display: block;
 
+
 }
 
 .imageStyle {
@@ -43,7 +44,7 @@ footer {
 bottom: 8em;
     border: 2px solid #EF7D00;
     box-shadow: 2px 2px 2px black;
-
+    opacity: 0;
 }
 
 .inputStyle{
@@ -51,6 +52,7 @@ bottom: 8em;
     width: auto;
     max-width: auto;
     min-width: 100%;
+    
 
 }
 

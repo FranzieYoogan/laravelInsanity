@@ -88,11 +88,11 @@ if($_POST){
     <div id="opacityBackground" class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5" style="position: relative; display: block;">
-          <img class="imageStyle" src="./public/img/logo/loginLogo.png"
+          <img class="imageStyle" id="imageStyle" src="./public/img/logo/loginLogo.png"
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-          <form id="containerFormLogin"  method="POST" action="">
+          <form id="containerFormLogin" id="containerFormLogin"  method="POST" action="">
            
  
   
@@ -184,6 +184,21 @@ document.getElementById('containerError').style.visibility = 'visible';
   </script> 
 
 <?php } ?>
+
+<script>
+
+
+window.addEventListener('load', function ()  {
+
+
+document.getElementById('imageStyle').style.transition = '2s';
+document.getElementById('imageStyle').style.opacity = '1';
+
+
+
+ })
+
+</script>
 
          <?php include('footer.php')  ?>
         
