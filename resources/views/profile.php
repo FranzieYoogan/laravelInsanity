@@ -644,7 +644,7 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
 
 } ?>
 
-  <form class="formImageProfile" id="formImageProfile" action="" method="POST" enctype="multipart/form-data">
+  <form class="formImageProfile" id="formImageProfile" action="" method="POST" enctype="multipart/form-data" style="z-index: 1 ;">
 
     <div>
 
@@ -653,7 +653,7 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
           id="file" class="fileStyleProfile"></label>
 
       <button class="buttonSendStyleProfile" name="submitImage" id="submitImageImage" onclick="triggerInput()"><img
-          class="imgButtonSendProfile" src="./public/img/profile/send.png" alt=""></button>
+          class="imgButtonSendProfile" src="./public/img/profile/send.png" alt="" ></button>
 
 
 
@@ -683,18 +683,7 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
 
   <section class="containerProfileAll" id="containerProfileAll" style="opacity: 1;">
 
-  <script>
-
-
-window.addEventListener('load', function ()  {
-
-
-document.getElementById('containerProfileAll').style.transition = '0.5s';
-document.getElementById('containerProfileAll').style.left = '0%';
-
- })
-
-</script>
+  
     <section class="containerProfile1">
 
 
@@ -1252,5 +1241,21 @@ function triggerCloseInputUnity() {
   
 </section>
 
+<script>
+
+
+window.addEventListener('load', function ()  {
+
+
+document.getElementById('containerProfileAll').style.transition = '0.5s';
+document.getElementById('containerProfileAll').style.left = '0%';
+
+setTimeout(() => {
+  document.getElementById('containerProfileAll').style.transition = '0s';
+}, 700);
+
+ })
+
+</script>
 
 <?php include('footer.php') ?>
