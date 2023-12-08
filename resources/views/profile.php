@@ -20,12 +20,12 @@ if (isset($_SESSION['learning_pure_php'])) {
   if (mysqli_num_rows($result) == 1) {
     while ($row = mysqli_fetch_assoc($result)) {
 
-      $userNameRow = $row['userName'];
+      $userNameRow = strtolower($row['userName']);
       $userIdRow = $row['userId'];
       $userMajorRow = $row['userMajor'];
-      $userEmailRow = $row['userEmail'];
+      $userEmailRow = strtolower($row['userEmail']);
       $userCpf = $row['userCpf'];
-      $userAddress = $row['userAddress'];
+      $userAddress = strtolower($row['userAddress']);
       $userPostCode = $row['userPostCode'];
       $userGender = $row['userGender'];
       $userInstitution = $row['userInstitution'];
@@ -767,7 +767,7 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
       </script>
 
       <h2 class="userNameStyle">
-        <?php echo $userName = $_SESSION['learning_pure_php'] ?>
+        <?php echo strtoupper($userName = $_SESSION['learning_pure_php']) ?>
       </h2>
       <?php if ($userMajorRow) { ?>
         <h2 class="userProfessionStyle">
