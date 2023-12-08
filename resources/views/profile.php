@@ -166,9 +166,9 @@ if (isset($_POST['submitUserNameChange'])) {
     if ($resultQueryName) {
 
 
-
-      echo "
-
+  $animation = true;
+      
+  echo"
 
   <div style='position: relative;'>
   <audio id='forgingSound' controls autoplay track style='visibility: hidden; position: absolute;'>
@@ -232,7 +232,7 @@ if (isset($_POST['submitUserNameChange'])) {
     if ($userPhone != '') {
   
   
-  
+      $animation = true;
   
       $queryPhone = "UPDATE users
     SET userPhone = '$userPhone' 
@@ -309,7 +309,7 @@ if (isset($_POST['submitUserAddressChange'])) {
   if ($userPhone != '') {
 
 
-
+    $animation = true;
 
     $queryAddress = "UPDATE users
   SET userAddress = '$userAddress' 
@@ -386,7 +386,7 @@ if (isset($_POST['submitUserZipCodeChange'])) {
   if ($userPhone != '') {
 
 
-
+    $animation = true;
 
     $queryZipCode = "UPDATE users
   SET userPostCode = '$userZipCode' 
@@ -462,7 +462,7 @@ if (isset($_POST['submitUserUnityChangeRJ'])) {
 
   if ($userUnityRJ) {
 
-
+    $animation = true;
 
 
     $queryUnityRJ = "UPDATE users
@@ -539,7 +539,7 @@ if (isset($_POST['submitUserUnityChangeSP'])) {
 
   if ($userUnitySP != '') {
 
-
+    $animation = true;
 
 
     $queryUnitySP = "UPDATE users
@@ -846,6 +846,8 @@ echo "<script> document.getElementById('containerAll').style.opacity = 1 </scrip
 
 
           </script>
+
+
 
           <div class="positioningData">
             <h1 class="textStyleProfile">Student Id <span class="spanIdStyle">  <?php echo $userIdRow ?>  </span></h1>
